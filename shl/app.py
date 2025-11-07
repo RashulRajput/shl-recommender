@@ -89,9 +89,9 @@ def get_query_embedding_gemini(text: str) -> np.ndarray:
     if not GEMINI_API_KEY:
         raise RuntimeError("GEMINI_API_KEY not configured")
 
-    model_name = os.getenv("GEMINI_EMBED_MODEL", "textembedding-gecko-001")
-    response = genai.embeddings.create(model=model_name, input=text)
-    vector = np.array(response.data[0].embedding, dtype=np.float32)
+    model_name = os.getenv("GEMINI_EMBED_MODEL", "models/embedding-001")
+    result = genai.embed_content(model=model_name, content=text, task_type="retrieval_query")
+    vector = np.array(result['embedding'], dtype=np.float32)
     return vector
 
 

@@ -16,8 +16,11 @@ def join_text(row: pd.Series) -> str:
 
 
 def embed_texts(texts: List[str], model_name: str) -> np.ndarray:
-	response = genai.embeddings.create(model=model_name, input=texts)
-	return np.array([item.embedding for item in response.data], dtype=np.float32)
+	embeddings = []
+	for text in texts:
+		result = genai.embed_content(model=model_name, content=text, task_type="retrieval_document")
+		embeddings.append(result['embedding'])
+	return np.array(embeddings, dtype=np.float32)
 
 def build():
 	df = pd.read_csv("data/assessments.csv")
@@ -29,7 +32,7 @@ def build():
 	if not api_key:
 		raise RuntimeError("GEMINI_API_KEY must be set to build embeddings")
 	genai.configure(api_key=api_key)
-	model_name = os.getenv("GEMINI_EMBED_MODEL", "textembedding-gecko-001")
+	model_name = os.getenv("GEMINI_EMBED_MODEL", "models/embedding-001")
 
 	# TF-IDF
 	tf = TfidfVectorizer(ngram_range=(1,2), max_features=20000)
