@@ -19,7 +19,8 @@ __pycache__/
 # Ignore notebooks (if any)
 *.ipynb_checkpoints/
 
-# Ignore CSV or model outputs (optional)
-*.npy
-*.pkl
-*.csv
+# Ignore data directory (assessments.csv, gen_ai_dataset.csv)
+shl/data/*
+
+# Allow model files to be committed
+# shl/models/* - commented out to include models in repo

@@ -1,4 +1,10 @@
-"""Build vector indexes for SHL assessments using Gemini embeddings."""
+"""Build TF-IDF + SentenceTransformer index locally.
+
+This script is intended for local preprocessing. It uses sentence-transformers
+to generate embeddings that are committed or deployed alongside the service.
+Runtime query embeddings in the API may use Gemini; catalog embeddings here
+remain ST-based to avoid quota consumption.
+"""
 
 import os
 from typing import List
@@ -7,7 +13,7 @@ import joblib
 import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
-import google.generativeai as genai
+from sentence_transformers import SentenceTransformer
 
 os.makedirs("models", exist_ok=True)
 
@@ -15,12 +21,8 @@ def join_text(row: pd.Series) -> str:
 	return " ".join(str(row.get(col, "")) for col in ["title", "raw_text", "test_type"])
 
 
-def embed_texts(texts: List[str], model_name: str) -> np.ndarray:
-	embeddings = []
-	for text in texts:
-		result = genai.embed_content(model=model_name, content=text, task_type="retrieval_document")
-		embeddings.append(result['embedding'])
-	return np.array(embeddings, dtype=np.float32)
+def embed_texts_st(model: SentenceTransformer, texts: List[str]) -> np.ndarray:
+	return model.encode(texts, show_progress_bar=True, convert_to_numpy=True)
 
 def build():
 	df = pd.read_csv("data/assessments.csv")
@@ -28,11 +30,9 @@ def build():
 		raise RuntimeError("data/assessments.csv is empty; run crawler first")
 	df["text"] = df.apply(join_text, axis=1)
 
-	api_key = os.getenv("GEMINI_API_KEY")
-	if not api_key:
-		raise RuntimeError("GEMINI_API_KEY must be set to build embeddings")
-	genai.configure(api_key=api_key)
-	model_name = os.getenv("GEMINI_EMBED_MODEL", "models/embedding-001")
+	# SentenceTransformer model name (can be parameterized)
+	st_model_name = os.getenv("ST_MODEL_NAME", "all-MiniLM-L6-v2")
+	st_model = SentenceTransformer(st_model_name)
 
 	# TF-IDF
 	tf = TfidfVectorizer(ngram_range=(1,2), max_features=20000)
@@ -40,17 +40,14 @@ def build():
 	joblib.dump(tf, "models/tfidf.pkl")
 	joblib.dump(tfidf_matrix, "models/tfidf_matrix.pkl")
 
+	# Embeddings
 	texts = df["text"].tolist()
-	embeddings_chunks = []
-	batch_size = max(1, int(os.getenv("GEMINI_EMBED_BATCH", "10")))
-	for start in range(0, len(texts), batch_size):
-		batch = texts[start:start + batch_size]
-		embeddings_chunks.append(embed_texts(batch, model_name))
-	embeddings = np.vstack(embeddings_chunks)
+	embeddings = embed_texts_st(st_model, texts)
 	np.save("models/embeddings.npy", embeddings)
 
 	joblib.dump(df, "models/assessments_df.pkl")
-	print("Index built successfully.")
+	joblib.dump(st_model, "models/embedder.pkl")
+	print("Index built successfully (SentenceTransformer)")
 
 if __name__ == "__main__":
 	build()
