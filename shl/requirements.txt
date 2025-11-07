@@ -1,15 +1,10 @@
 fastapi
-uvicorn[standard]
+uvicorn
 requests
 beautifulsoup4
 pandas
 numpy
 scikit-learn
-sentence-transformers
 joblib
-python-multipart
-pytest
-aiohttp
-psutil
-faiss-cpu
+google-generativeai
 openpyxl
