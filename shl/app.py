@@ -1,5 +1,3 @@
-df = joblib.load("models/assessments_df.pkl")
-tf = joblib.load("models/tfidf.pkl")
 import os
 
 import google.generativeai as genai
