@@ -1,5 +1,5 @@
 import os
-
+import time
 import google.generativeai as genai
 import joblib
 import numpy as np
@@ -22,9 +22,12 @@ class Req(BaseModel):
     top_k: int = 5
 
 
+# ---------------------------------------------------------------------
+# CONFIG
+# ---------------------------------------------------------------------
 EMBED_PROVIDER = os.getenv("EMBED_API_PROVIDER", "gemini").lower()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
-GEMINI_EMBED_MODEL = os.getenv("GEMINI_EMBED_MODEL", "textembedding-gecko-001")
+GEMINI_EMBED_MODEL = os.getenv("GEMINI_EMBED_MODEL", "models/embedding-001")
 MODELS_READY = False
 df = None
 embeddings = None
@@ -32,10 +35,11 @@ tf = None
 tfidf_matrix = None
 
 
+# ---------------------------------------------------------------------
+# LOAD MODELS
+# ---------------------------------------------------------------------
 def load_models():
-    """
-    Load only precomputed artifacts: assessments_df.pkl, embeddings.npy, tfidf.pkl, tfidf_matrix.pkl
-    """
+    """Load precomputed artifacts (TFIDF, embeddings, etc.)"""
     global MODELS_READY, df, embeddings, tf, tfidf_matrix
     try:
         required = [
@@ -61,9 +65,11 @@ def load_models():
         print("[load_models] ERROR loading models:", str(e))
 
 
+# ---------------------------------------------------------------------
+# STARTUP CONFIG
+# ---------------------------------------------------------------------
 @app.on_event("startup")
 def on_startup():
-    # configure Gemini
     if EMBED_PROVIDER == "gemini":
         if GEMINI_API_KEY:
             genai.configure(api_key=GEMINI_API_KEY)
@@ -73,45 +79,63 @@ def on_startup():
     load_models()
 
 
+# ---------------------------------------------------------------------
+# HELPERS
+# ---------------------------------------------------------------------
 def fetch_url_text(url: str) -> str:
     try:
-        response = requests.get(url, timeout=10)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, "html.parser")
-        for node in soup(["script", "style", "noscript"]):
-            node.decompose()
+        r = requests.get(url, timeout=10)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+        for s in soup(["script", "style", "noscript"]):
+            s.decompose()
         return soup.get_text(separator=" ", strip=True)
     except Exception:
         return ""
 
 
-def normalize(values):
-    array = np.array(values, dtype=float)
-    return (array - array.min()) / (array.max() - array.min() + 1e-9)
+def normalize(x):
+    arr = np.array(x, dtype=float)
+    return (arr - arr.min()) / (arr.max() - arr.min() + 1e-9)
 
 
+# ---------------------------------------------------------------------
+# EMBEDDING (LATEST GEMINI)
+# ---------------------------------------------------------------------
 def get_query_embedding_gemini(text: str) -> np.ndarray:
+    """Generate embeddings using Gemini 1.5+ SDK (compatible format)."""
     if not GEMINI_API_KEY:
         raise RuntimeError("GEMINI_API_KEY not set in environment")
 
-    # create embedding
-    resp = genai.embeddings.create(model=GEMINI_EMBED_MODEL, input=text)
-    # response structure: resp.data[0].embedding
-    emb = np.array(resp.data[0].embedding, dtype=np.float32)
-    return emb
+    genai.configure(api_key=GEMINI_API_KEY)
+    model = genai.GenerativeModel(GEMINI_EMBED_MODEL)
+    last_error = None
+
+    for attempt in range(1, 4):  # retry up to 3 times
+        try:
+            response = model.embed_content(content=text)
+            if hasattr(response, "embedding"):
+                return np.array(response.embedding, dtype=np.float32)
+            raise RuntimeError("Invalid Gemini response structure.")
+        except Exception as e:
+            last_error = e
+            print(f"[gemini] attempt {attempt} failed: {e}")
+            time.sleep(1.5 * attempt)
+    raise RuntimeError(f"Gemini embedding failed after retries: {last_error}")
 
 
 def get_query_embedding(text: str) -> np.ndarray:
     if EMBED_PROVIDER == "gemini":
         return get_query_embedding_gemini(text)
-    else:
-        raise RuntimeError("Unsupported EMBED_PROVIDER. Use 'gemini'.")
+    raise RuntimeError("Unsupported EMBED_PROVIDER; only 'gemini' supported.")
 
 
+# ---------------------------------------------------------------------
+# ROUTES
+# ---------------------------------------------------------------------
 @app.get("/health")
 def health():
-    status = "ok" if MODELS_READY else "starting"
-    return {"status": status}
+    return {"status": "ok" if MODELS_READY else "starting"}
 
 
 @app.post("/recommend")
@@ -122,38 +146,32 @@ def recommend(req: Req):
         if req.top_k < 1 or req.top_k > 10:
             raise HTTPException(status_code=400, detail="top_k must be between 1 and 10")
         if not MODELS_READY:
-            raise HTTPException(status_code=503, detail="Models not ready yet. Please try again shortly.")
+            raise HTTPException(status_code=503, detail="Models not ready yet.")
 
-        # Build query text
+        # Query text assembly
         q_text = " ".join([req.job_title or "", req.description or ""]).strip()
         if req.url:
             q_text += " " + fetch_url_text(req.url)
 
-        # 1) Query embedding via Gemini
+        # Gemini embedding
         try:
             q_emb = get_query_embedding(q_text)
         except Exception as e:
-            # If external API fails, fallback to TF-IDF only
             print("[recommend] embedding API failed:", str(e))
             q_emb = None
 
-        # 2) Semantic similarity (if q_emb present)
         if q_emb is not None:
             sem = cosine_similarity(q_emb.reshape(1, -1), embeddings)[0]
             sem_n = normalize(sem)
         else:
             sem_n = np.zeros(len(df))
 
-        # 3) TF-IDF similarity
         q_vec = tf.transform([q_text])
         tfidf_sims = cosine_similarity(q_vec, tfidf_matrix)[0]
         tf_n = normalize(tfidf_sims)
-
-        # 4) Combine hybrid score
-        # adjust weights as needed
         final = 0.65 * sem_n + 0.35 * tf_n
 
-        # 5) Balance K (Knowledge) and P (Personality) if both domains present
+        # Domain balancing
         tech_tokens = ["python","java","sql","javascript","react","node","c++","c#","docker","kubernetes","coding","technical","software","engineer","qa","selenium"]
         beh_tokens = ["collaborat","team","stakehold","communication","personality","behaviour","behavior","leadership","culture","interpersonal"]
         txt_low = q_text.lower()
@@ -184,14 +202,16 @@ def recommend(req: Req):
         else:
             selected_idx = list(idx_sorted[:top_k])
 
-        out = []
-        for i in selected_idx:
-            out.append({
+        out = [
+            {
                 "assessment_name": df.iloc[i]["title"],
                 "assessment_url": df.iloc[i]["url"],
-                "score": float(final[i])
-            })
+                "score": float(final[i]),
+            }
+            for i in selected_idx
+        ]
         return {"recommendations": out}
+
     except HTTPException:
         raise
     except Exception as e:

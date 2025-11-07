@@ -1,6 +1,18 @@
-# SHL Assessment Recommendation Engine
+# SHL Assessment Recommendation System
 
-FastAPI service that crawls SHL's Individual Test Solutions catalog, builds a hybrid semantic/TF-IDF index, and returns the best-fit assessment links for a hiring query. The pipeline also produces CSV submissions that meet SHL Gen-AI grader requirements.
+This project crawls SHL’s catalog and recommends relevant assessments based on job descriptions.
+
+## Quick Start
+```
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python shl/build_index.py
+uvicorn shl.app:app --reload --port 8000
+```
+
+### venv/ folder
+⚠️ Should NOT be in Git. Add `.venv/` (and `venv/`) to `.gitignore` before pushing.
 
 ## Table of Contents
 - [Features](#features)
@@ -40,7 +52,6 @@ SHL/
 		│   └── gen_ai_dataset.csv   # or Gen_AI Dataset.xlsx
 		├── models/
 		│   ├── assessments_df.pkl
-		│   ├── embedder.pkl
 		│   ├── embeddings.npy
 		│   ├── tfidf.pkl
 		│   └── tfidf_matrix.pkl
@@ -51,6 +62,19 @@ SHL/
 				└── test_api.sh
 ```
 
+## Model Artifacts Policy
+Keep these small runtime artifacts in Git (needed by `app.py`):
+- `shl/models/assessments_df.pkl`
+- `shl/models/embeddings.npy`
+- `shl/models/tfidf.pkl`
+- `shl/models/tfidf_matrix.pkl`
+
+Do NOT commit heavy or unneeded artifacts:
+- `shl/models/embedder.pkl` (remove; not needed if using Gemini/OpenAI at query time)
+- Any other large binaries: `*.pth`, `*.bin`, `*.pt`, `*.ckpt`, `*.onnx`, `*.safetensors`
+
+These are already ignored via `.gitignore`.
+
 ## Prerequisites
 - Python 3.10+
 - pip 22+
@@ -58,9 +82,9 @@ SHL/
 
 ## Local Setup
 ```bash
-# create and activate a virtual environment
+# create and activate a virtual environment (Windows example)
 python -m venv venv
-source venv/bin/activate              # Windows: venv\Scripts\activate
+venv\Scripts\activate
 
 # install dependencies
 pip install -r requirements.txt
@@ -84,7 +108,7 @@ python generate_predictions.py   # call API + produce predictions CSV files
 
 To serve the API locally:
 ```bash
-uvicorn app:app --reload --port 8000
+uvicorn shl.app:app --reload --port 8000
 ```
 
 ## API Usage

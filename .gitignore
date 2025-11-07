@@ -8,9 +8,14 @@ __pycache__/
 *.pyo
 *.pyd
 
+# Ignore model artifacts (blanket rules)
+*.pkl
+*.npy
+
 # Ignore environment and OS files
 .env
 .DS_Store
+Thumbs.db
 
 # Ignore large data / logs
 *.log
@@ -19,8 +24,26 @@ __pycache__/
 # Ignore notebooks (if any)
 *.ipynb_checkpoints/
 
-# Ignore data directory (assessments.csv, gen_ai_dataset.csv)
-shl/data/*
+# Data
+shl/data/*.xlsx
 
-# Allow model files to be committed
-# shl/models/* - commented out to include models in repo
+# Models: keep only small runtime artifacts; ignore heavy model binaries
+# Exception: Keep these runtime artifacts (needed by app at runtime)
+!shl/models/assessments_df.pkl
+!shl/models/embeddings.npy
+!shl/models/tfidf.pkl
+!shl/models/tfidf_matrix.pkl
+
+# Ignore heavy/unused model files
+shl/models/embedder.pkl
+shl/models/*.pth
+shl/models/*.bin
+shl/models/*.pt
+shl/models/*.ckpt
+shl/models/*.safetensors
+shl/models/*.onnx
+
+# Fallback: ignore any other large artifacts you accidentally drop in models/
+# (explicit keeps above will still be tracked)
+# Uncomment next line to blanket-ignore everything except the 4 keepers
+# shl/models/*

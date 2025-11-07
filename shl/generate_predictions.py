@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 import os
 
-LOCAL_URL = "http://127.0.0.1:8000/recommend"
+LOCAL_URL = "http://127.0.0.1:8002/recommend"
 DEFAULT_XLSX = "data/Gen_AI Dataset.xlsx"
 ALT_CSV = "data/gen_ai_dataset.csv"
 

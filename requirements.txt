@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+requests
+beautifulsoup4
+pandas
+numpy
+scikit-learn
+joblib
+google-generativeai
+openpyxl
+sentence-transformers
+tqdm
