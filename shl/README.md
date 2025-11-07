@@ -1,165 +1,112 @@
-# SHL Assessment Recommendation System
+SHL Assessment Recommendation System
 
-This project crawls SHL’s catalog and recommends relevant assessments based on job descriptions.
+This project is an intelligent Assessment Recommendation System, built according to the official SHL specification document and its provided dataset.
 
-## Quick Start
-```
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-python shl/build_index.py
-uvicorn shl.app:app --reload --port 8000
-```
+It recommends the most relevant SHL assessments for a given job description using a hybrid approach that combines TF-IDF similarity and Gemini API–based semantic embeddings, delivered through a FastAPI backend.
 
-### venv/ folder
-⚠️ Should NOT be in Git. Add `.venv/` (and `venv/`) to `.gitignore` before pushing.
+⚙️ Tech Stack & Frameworks
 
-## Table of Contents
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Local Setup](#local-setup)
-- [Data Preparation](#data-preparation)
-- [End-to-End Pipeline](#end-to-end-pipeline)
-- [API Usage](#api-usage)
-- [Prediction Exports](#prediction-exports)
-- [Testing](#testing)
-- [Deployment (Render)](#deployment-render)
-- [Troubleshooting](#troubleshooting)
+Framework: FastAPI (Python 3.10)
 
-## Features
-- Web crawler with pre-packaged product filtering to keep only individual assessments.
-- Hybrid recommender combining SentenceTransformer embeddings (60%) and TF-IDF cosine similarity (40%).
-- Smart balancing that mixes knowledge ("K") and personality ("P") assessments when both technical and behavioral signals appear in the query.
-- FastAPI endpoints for health checks and recommendations.
-- Batch generator that produces both rich (`predictions.csv`) and submission-ready (`predictions_min.csv`) files.
-- Validation script to guarantee the submission CSV matches grader expectations.
+Libraries: Scikit-learn, FAISS, Joblib, NumPy, Pandas
 
-## Project Structure
-```
+Embeddings Provider: Gemini API (Google Generative AI)
+
+Deployment: Render
+
+Environment Management: venv
+
+API Testing: PowerShell / curl
+
+🧩 System Overview
+
+Crawler (crawler.py) – Extracts assessment data from SHL’s product catalogue.
+
+Index Builder (build_index.py) – Creates TF-IDF and embedding representations.
+
+API (app.py) – Provides endpoints:
+
+/health → Health check
+
+/recommend → Returns top-k matching assessments
+
+Prediction Generator (generate_predictions.py) – Produces predictions.csv and predictions_min.csv in submission format.
+
+📁 Directory Structure
 SHL/
+├── requirements.txt
 ├── Procfile
-├── .gitignore
+├── README.md
 └── shl/
-		├── app.py
-		├── build_index.py
-		├── crawler.py
-		├── generate_predictions.py
-		├── requirements.txt
-		├── README.md                # this file
-		├── data/
-		│   ├── assessments.csv
-		│   └── gen_ai_dataset.csv   # or Gen_AI Dataset.xlsx
-		├── models/
-		│   ├── assessments_df.pkl
-		│   ├── embeddings.npy
-		│   ├── tfidf.pkl
-		│   └── tfidf_matrix.pkl
-		├── predictions.csv
-		├── predictions_min.csv
-		└── tests/
-				├── check_submit.py
-				└── test_api.sh
-```
+    ├── app.py
+    ├── crawler.py
+    ├── build_index.py
+    ├── generate_predictions.py
+    ├── data/
+    ├── models/
+    │   ├── assessments_df.pkl
+    │   ├── embeddings.npy
+    │   ├── tfidf.pkl
+    │   └── tfidf_matrix.pkl
+    ├── predictions.csv
+    ├── predictions_min.csv
+    └── tests/
 
-## Model Artifacts Policy
-Keep these small runtime artifacts in Git (needed by `app.py`):
-- `shl/models/assessments_df.pkl`
-- `shl/models/embeddings.npy`
-- `shl/models/tfidf.pkl`
-- `shl/models/tfidf_matrix.pkl`
-
-Do NOT commit heavy or unneeded artifacts:
-- `shl/models/embedder.pkl` (remove; not needed if using Gemini/OpenAI at query time)
-- Any other large binaries: `*.pth`, `*.bin`, `*.pt`, `*.ckpt`, `*.onnx`, `*.safetensors`
-
-These are already ignored via `.gitignore`.
-
-## Prerequisites
-- Python 3.10+
-- pip 22+
-- (Optional) Git for version control
-
-## Local Setup
-```bash
-# create and activate a virtual environment (Windows example)
+🧪 How to Run
+1️⃣ Setup
 python -m venv venv
 venv\Scripts\activate
-
-# install dependencies
 pip install -r requirements.txt
-```
 
-## Data Preparation
-1. **Query Dataset**: place one of the following in `shl/data/`:
-	 - `Gen_AI Dataset.xlsx`
-	 - `gen_ai_dataset.csv`
-	 Only the first column is read; each row should contain a job query.
-2. **Assessments**: run the crawler to build `data/assessments.csv` (see pipeline below). You can also ship a pre-generated file when deploying.
+2️⃣ Build Index
+python shl/build_index.py
 
-## End-to-End Pipeline
-Execute the following steps in order from inside `shl/` with the virtual environment activated:
+3️⃣ Run Server
+$env:GEMINI_API_KEY="<your_gemini_api_key>"
+$env:EMBED_API_PROVIDER="gemini"
+uvicorn shl.app:app --port 8002
 
-```bash
-python crawler.py                # scrape SHL catalog into data/assessments.csv
-python build_index.py            # build TF-IDF + embedding artifacts in models/
-python generate_predictions.py   # call API + produce predictions CSV files
-```
+4️⃣ Test Endpoints
 
-To serve the API locally:
-```bash
-uvicorn shl.app:app --reload --port 8000
-```
+Health Check:
 
-## API Usage
-### Health Check
-```
-GET /health  -> {"status": "ok"}
-```
+Invoke-RestMethod -Uri "http://127.0.0.1:8002/health"
 
-### Recommendation Endpoint
-- **URL**: `POST /recommend`
-- **Body**:
-	```json
-	{
-		"job_title": "Java developer who collaborates with business teams",
-		"description": "Optional additional context",
-		"url": "Optional URL to scrape",
-		"top_k": 5
-	}
-	```
-- **Notes**:
-	- `top_k` must be between 1 and 10.
-	- When both technical and behavioral keywords are detected, at least one knowledge (K) and one personality (P) assessment are returned when available.
 
-## Prediction Exports
-- `predictions.csv`: columns `Query`, `Assessment_url`, `Score` for analysis.
-- `predictions_min.csv`: two-column submission file consumed by the grader.
+Recommendation Example:
 
-The script `python tests/check_submit.py` validates `predictions_min.csv` formatting (headers, row count, URL integrity).
+$body = '{"job_title":"Python developer who collaborates with backend teams","top_k":5}'
+Invoke-RestMethod -Uri "http://127.0.0.1:8002/recommend" -Method POST -Body $body -ContentType "application/json"
 
-## Testing
-```bash
-# submission CSV sanity checks
-python tests/check_submit.py
+📦 Output Example
+{
+  "recommendations": [
+    {
+      "assessment_name": "Coding Simulations",
+      "assessment_url": "https://www.shl.com/products/assessments/skills-and-simulations/coding-simulations/",
+      "score": 0.34
+    }
+  ]
+}
 
-# API smoke test (PowerShell example)
-$body = '{"job_title":"Java developer","top_k":5}'
-(Invoke-WebRequest -Uri "http://127.0.0.1:8000/recommend" -Method POST -Body $body -ContentType "application/json").Content
+🌐 Deployment
 
-# run pytest (no unit tests yet, but keeps CI green)
-python -m pytest
-```
+Build Command:
 
-## Deployment (Render)
-1. Push the repository to GitHub (Procfile already included).
-2. In Render, create a **Web Service**:
-	 - Environment: `Python`
-	 - Build Command: `pip install -r requirements.txt`
-	 - Start Command: `uvicorn shl.app:app --host 0.0.0.0 --port $PORT`
-3. Ensure the `data/` and `models/` artifacts you need are committed or generated during build.
+pip install -r requirements.txt
 
-## Troubleshooting
-- **`Method Not Allowed` when posting**: PowerShell's built-in `curl` defaults to GET. Use `Invoke-WebRequest` or `Invoke-RestMethod` with `-Method POST`.
-- **`No module named uvicorn`**: install dependencies inside the activated virtual environment.
-- **Port already in use**: stop existing Uvicorn instances (`Ctrl+C`) or choose another port via `--port`.
+
+Start Command:
+
+uvicorn shl.app:app --host 0.0.0.0 --port $PORT
+
+
+Environment Variables:
+
+GEMINI_API_KEY = <your_gemini_api_key>
+EMBED_API_PROVIDER = gemini
+
+✅ Completion Statement
+
+I have successfully completed this Assessment Recommendation System according to the official SHL document and dataset requirements.
+The project includes crawling, model building, hybrid recommendation logic, API endpoints, and deployment on Render.
