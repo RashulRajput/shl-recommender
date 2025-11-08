@@ -34,13 +34,12 @@ tfidf_matrix = None
 
 def load_models():
     """
-    Load only precomputed artifacts: assessments_df.pkl, embeddings.npy, tfidf.pkl, tfidf_matrix.pkl
+    Load only precomputed artifacts: assessments_df.pkl, embeddings.npy (optional), tfidf.pkl, tfidf_matrix.pkl
     """
     global MODELS_READY, df, embeddings, tf, tfidf_matrix
     try:
         required = [
             "shl/models/assessments_df.pkl",
-            "shl/models/embeddings.npy",
             "shl/models/tfidf.pkl",
             "shl/models/tfidf_matrix.pkl",
         ]
@@ -51,11 +50,18 @@ def load_models():
                 return
 
         df = joblib.load("shl/models/assessments_df.pkl")
-        embeddings = np.load("shl/models/embeddings.npy")
         tf = joblib.load("shl/models/tfidf.pkl")
         tfidf_matrix = joblib.load("shl/models/tfidf_matrix.pkl")
+        
+        # embeddings are optional - load if available
+        if os.path.exists("shl/models/embeddings.npy"):
+            embeddings = np.load("shl/models/embeddings.npy")
+            print("[load_models] models loaded successfully with embeddings")
+        else:
+            embeddings = None
+            print("[load_models] models loaded successfully (TF-IDF only mode - no embeddings)")
+        
         MODELS_READY = True
-        print("[load_models] models loaded successfully")
     except Exception as e:
         MODELS_READY = False
         print("[load_models] ERROR loading models:", str(e))
@@ -373,8 +379,8 @@ def recommend(req: Req):
             print("[recommend] embedding API failed:", str(e))
             q_emb = None
 
-        # 2) Semantic similarity (if q_emb present)
-        if q_emb is not None:
+        # 2) Semantic similarity (if q_emb present and embeddings loaded)
+        if q_emb is not None and embeddings is not None:
             sem = cosine_similarity(q_emb.reshape(1, -1), embeddings)[0]
             sem_n = normalize(sem)
         else:
