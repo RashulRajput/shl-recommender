@@ -1,43 +1,18 @@
 """Build vector indexes for SHL assessments using Gemini embeddings."""
 
 import os
-from typing import List
 
 import joblib
 import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 import google.generativeai as genai
+from embed_gemini_only import make_embeddings
 
 os.makedirs("models", exist_ok=True)
 
 def join_text(row: pd.Series) -> str:
 	return " ".join(str(row.get(col, "")) for col in ["title", "raw_text", "test_type"])
-
-
-def embed_texts(texts: List[str], model_name: str) -> np.ndarray:
-	"""Create embeddings for a list of texts using Gemini.
-
-	Tries the modern API (genai.embeddings.create). If unavailable, falls back to
-	genai.embed_content for older library versions.
-	"""
-	embeddings = []
-	for text in texts:
-		emb = None
-		# Try new embeddings API first
-		try:
-			if hasattr(genai, "embeddings") and hasattr(genai.embeddings, "create"):
-				resp = genai.embeddings.create(model=model_name, input=text)
-				emb = resp.data[0].embedding
-		except Exception:
-			emb = None
-		# Fallback to legacy API
-		if emb is None:
-			fallback_model = os.getenv("GEMINI_EMBED_MODEL_FALLBACK", "models/embedding-001")
-			result = genai.embed_content(model=fallback_model, content=text, task_type="retrieval_document")
-			emb = result["embedding"]
-		embeddings.append(emb)
-	return np.array(embeddings, dtype=np.float32)
 
 def build():
 	"""Build or refresh vector artifacts.
@@ -85,24 +60,11 @@ def build():
 	joblib.dump(tf, "models/tfidf.pkl")
 	joblib.dump(tfidf_matrix, "models/tfidf_matrix.pkl")
 
-	texts = df["text"].tolist()
-	# Try to (re)build embeddings; if the API quota is exceeded, keep existing file.
-	try:
-		print(f"Building embeddings with model '{model_name}'...")
-		embeddings_chunks = []
-		batch_size = max(1, int(os.getenv("GEMINI_EMBED_BATCH", "10")))
-		for start in range(0, len(texts), batch_size):
-			batch = texts[start:start + batch_size]
-			embeddings_chunks.append(embed_texts(batch, model_name))
-		embeddings = np.vstack(embeddings_chunks)
-		np.save("models/embeddings.npy", embeddings)
-		print(f"Embeddings built: shape {embeddings.shape}")
-	except Exception as e:
-		print(f"[build] Skipping embeddings generation due to error: {e}")
-		if os.path.exists("models/embeddings.npy"):
-			print("Using existing models/embeddings.npy")
-		else:
-			print("No existing embeddings.npy found; the app will fall back to TF-IDF only at runtime.")
+	texts = df["text"].astype(str).tolist()
+	# Use the new embed_gemini_only wrapper which handles fallbacks gracefully
+	print(f"Building embeddings with model '{model_name}' using embed_gemini_only wrapper...")
+	embeddings = make_embeddings(texts, model=model_name, reuse_existing=True)
+	print(f"Embeddings ready: shape {embeddings.shape}")
 
 	joblib.dump(df, "models/assessments_df.pkl")
 	print("Index built successfully.")
