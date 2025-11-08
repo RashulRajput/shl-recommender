@@ -40,18 +40,34 @@ def embed_texts(texts: List[str], model_name: str) -> np.ndarray:
 	return np.array(embeddings, dtype=np.float32)
 
 def build():
-	df = pd.read_csv("data/assessments.csv")
-	if df.empty:
-		raise RuntimeError("data/assessments.csv is empty; run crawler first")
-	
-	# Filter to only rows with test_type (actual assessments, not navigation pages)
-	df = df[df["test_type"].notnull()].copy()
-	print(f"Loaded {len(df)} assessments with test_type")
-	
-	if df.empty:
-		raise RuntimeError("No valid assessments found with test_type; check crawler output")
-	
-	df["text"] = df.apply(join_text, axis=1)
+	"""Build or refresh vector artifacts.
+
+	Priority for consistency:
+	- If models/assessments_df.pkl exists, use it as the source of truth so that
+	  TF-IDF and embeddings align in row count and order.
+	- Otherwise, construct from data/assessments.csv (filtering out rows without test_type),
+	  and attempt to build embeddings as well.
+	"""
+
+	model_df_path = "models/assessments_df.pkl"
+	if os.path.exists(model_df_path):
+		print("Loading existing models/assessments_df.pkl to preserve row alignment...")
+		df = joblib.load(model_df_path)
+		# Ensure required columns exist; reconstruct text if needed
+		if "text" not in df.columns or df["text"].isna().all():
+			print("Reconstructing 'text' column from title/raw_text/test_type...")
+			df["text"] = df.apply(join_text, axis=1)
+	else:
+		# Build from raw catalog
+		df = pd.read_csv("data/assessments.csv")
+		if df.empty:
+			raise RuntimeError("data/assessments.csv is empty; run crawler first")
+		# Keep only actual assessments
+		df = df[df["test_type"].notnull()].copy()
+		print(f"Loaded {len(df)} assessments with test_type from catalog")
+		if df.empty:
+			raise RuntimeError("No valid assessments found with test_type; check crawler output")
+		df["text"] = df.apply(join_text, axis=1)
 
 	api_key = os.getenv("GEMINI_API_KEY")
 	if not api_key:
