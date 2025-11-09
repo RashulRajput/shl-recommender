@@ -5,9 +5,32 @@ import pandas as pd
 import requests
 import sys
 from collections import defaultdict
+import re
 
 API_URL = "http://127.0.0.1:8002/recommend"
 TRAINING_DATA = "shl/data/Gen_AI_Train-Set_FULL.csv"
+
+def normalize_url(url):
+    """
+    Normalize SHL URLs to handle format differences:
+    - Remove /solutions/ from path
+    - Remove trailing slashes
+    - Extract assessment ID for comparison
+    """
+    url = str(url).strip()
+    # Remove /solutions/ from path
+    url = url.replace('/solutions/products/', '/products/')
+    # Remove trailing slash
+    url = url.rstrip('/')
+    return url
+
+def get_assessment_id(url):
+    """Extract assessment ID from URL for fuzzy matching"""
+    # Extract the last part of the URL (assessment ID)
+    match = re.search(r'/view/([^/]+)/?$', url)
+    if match:
+        return match.group(1)
+    return url
 
 def load_training_data():
     """Load training data with ground truth labels"""
@@ -18,7 +41,9 @@ def load_training_data():
     for _, row in df.iterrows():
         query = str(row['Query']).strip()
         assessment_url = str(row['Assessment_url']).strip()
-        query_assessments[query].add(assessment_url)
+        # Normalize URLs
+        normalized_url = normalize_url(assessment_url)
+        query_assessments[query].add(normalized_url)
     
     return dict(query_assessments)
 
@@ -30,8 +55,8 @@ def get_recommendations(query, top_k=5):
         response.raise_for_status()
         result = response.json()
         
-        # Extract URLs from recommendations
-        recommended_urls = [rec['assessment_url'] for rec in result.get('recommendations', [])]
+        # Extract URLs from recommendations and normalize them
+        recommended_urls = [normalize_url(rec['assessment_url']) for rec in result.get('recommendations', [])]
         return recommended_urls
     except Exception as e:
         print(f"Error getting recommendations for '{query[:50]}...': {e}")

@@ -1,34 +1,2304 @@
 Query,Assessment_url,Score
-"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/python-new/,0.48000000000000004
-"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/java-8-new/,0.34561296636636907
-"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/core-java-advanced-level-new/,0.33382119703669055
-"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/automata-data-science-new/,0.32386755062267997
-"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/java-design-patterns-new/,0.3208390735146639
-"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/java-platform-enterprise-edition-7-java-ee-7/,0.31784855631538317
-"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/automata-data-science-pro-new/,0.31618246957104484
-"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/java-frameworks-new/,0.3064161315395214
-"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/automata-sql-new/,0.2989144437810793
-"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/automata-fix-new/,0.2949718443949261
-"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/sales-profiler-cards/,0.4
-"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/sales-transformation-report-sales-manager/,0.3707348257365841
-"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/sales-transformation-report-2-0-sales-manager/,0.3593329944073614
-"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/sales-interview-guide/,0.34898977552689736
-"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/retail-sales-and-service-simulation/,0.3467768048764793
-"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/java-8-new/,0.3428568917806109
-"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/,0.3203131569974099
-"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/sales-and-service-phone-solution/,0.310753015139126
-"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/apprentice-8-0-job-focused-assessment-4261/,0.3024594511611453
-"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/sales-and-service-phone-simulation/,0.296526866041595
-"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/java-8-new/,0.4
-"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/java-2-platform-enterprise-edition-1-4-fundamental/,0.36199974685131386
-"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/360/,0.33288191092730235
-"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/cardiology-and-diabetes-management-new/,0.29832767173383257
-"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/medical-terminology-new/,0.29618175500939026
-"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/net-framework-4-5/,0.2916717075996762
-"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/swing-new/,0.2874270231611436
-"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/prism-new/,0.2873433126115009
-"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/ms-word-new/,0.2861350545457479
-"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/occupational-personality-questionnaire-opq32r/,0.283555316306955
+"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/python-new/,1.08
+"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/automata-sql-new/,0.7459851095507681
+"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/java-8-new/,0.7433571728169913
+"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/core-java-advanced-level-new/,0.7132592364114198
+"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/automata-data-science-new/,0.6880003313150551
+"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/java-design-patterns-new/,0.6806133443098514
+"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/java-platform-enterprise-edition-7-java-ee-7/,0.6721563198644588
+"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/automata-data-science-pro-new/,0.6688953237985305
+"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/sql-new/,0.6549402650299475
+"Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an assessment package that can test all skills with max duration of 60 minutes.",https://www.shl.com/products/product-catalog/view/sql-server-new/,0.6457158779930741
+"Job Description
+
+ Join a community that is shaping the future of work! 
+
+ SHL, People Science. People Answers. 
+
+Are you an AI enthusiastwith visionary thinking to conceptualize AI-based products? Are you looking to apply these skills in an environment where teamwork and collaboration are key to developing our digital product experiences? We are seeking a Research Engineer to join our team to deliver robust AI/ML models. You will closely work with the product team to spot opportunities to use AI in the current product stack and influence the product roadmap by incorporating AI-led features/products.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity, and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.
+
+What You Will Be Doing
+
+ Develop and experiment with machine learning models like NLP, computer vision etc. 
+ Prototype and fine-tune generative AI models for text, image, speech, and video generation. 
+ Implement emerging LLM technologies and monitoring tools. 
+ Manage the entire AI/ML lifecycle from research to deployment and maintenance. 
+ Optimize models for scalability, efficiency, and performance. 
+ Collaborate with ML engineers for solution delivery and propose AI-driven enhancements. 
+ Contribute to research, documentation, and publications with AI/ML advancements. 
+
+Essential
+
+What we are looking for from you:
+
+ Relevant experience in AI/ML - NLP, speech processing, and computer vision. 
+ Proficiency in Python and ML frameworks such as TensorFlow, PyTorch, & OpenAI APIs. 
+ Good knowledge of ML theory deep learning, and statistical modeling. 
+
+Desirable
+
+ Familiarity with Generative AI (LLMs & RAG). 
+ Experience in prototyping and deploying AI. 
+ Agile and proactive thinking. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent 
+
+#AIJobs #ResearchJobs #MLJobs
+
+#CareerOpportunities #JobOpportunities 
+
+About Us
+
+ We unlock the possibilities of businesses through the power of people, science and technology. 
+ We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation. 
+ When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale. 
+
+What SHL Can Offer You
+
+ Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL ) 
+ Employee benefits package that takes care of you and your family. 
+ Support, coaching, and on-the-job development to achieve career success 
+ A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL ) 
+ The ability to transform workplaces around the world for others. 
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Can you recommend some assessment that can help me screen applications. Time limit is less than 30 minutes",https://www.shl.com/products/product-catalog/view/ai-skills/,1.0
+"Job Description
+
+ Join a community that is shaping the future of work! 
+
+ SHL, People Science. People Answers. 
+
+Are you an AI enthusiastwith visionary thinking to conceptualize AI-based products? Are you looking to apply these skills in an environment where teamwork and collaboration are key to developing our digital product experiences? We are seeking a Research Engineer to join our team to deliver robust AI/ML models. You will closely work with the product team to spot opportunities to use AI in the current product stack and influence the product roadmap by incorporating AI-led features/products.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity, and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.
+
+What You Will Be Doing
+
+ Develop and experiment with machine learning models like NLP, computer vision etc. 
+ Prototype and fine-tune generative AI models for text, image, speech, and video generation. 
+ Implement emerging LLM technologies and monitoring tools. 
+ Manage the entire AI/ML lifecycle from research to deployment and maintenance. 
+ Optimize models for scalability, efficiency, and performance. 
+ Collaborate with ML engineers for solution delivery and propose AI-driven enhancements. 
+ Contribute to research, documentation, and publications with AI/ML advancements. 
+
+Essential
+
+What we are looking for from you:
+
+ Relevant experience in AI/ML - NLP, speech processing, and computer vision. 
+ Proficiency in Python and ML frameworks such as TensorFlow, PyTorch, & OpenAI APIs. 
+ Good knowledge of ML theory deep learning, and statistical modeling. 
+
+Desirable
+
+ Familiarity with Generative AI (LLMs & RAG). 
+ Experience in prototyping and deploying AI. 
+ Agile and proactive thinking. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent 
+
+#AIJobs #ResearchJobs #MLJobs
+
+#CareerOpportunities #JobOpportunities 
+
+About Us
+
+ We unlock the possibilities of businesses through the power of people, science and technology. 
+ We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation. 
+ When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale. 
+
+What SHL Can Offer You
+
+ Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL ) 
+ Employee benefits package that takes care of you and your family. 
+ Support, coaching, and on-the-job development to achieve career success 
+ A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL ) 
+ The ability to transform workplaces around the world for others. 
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Can you recommend some assessment that can help me screen applications. Time limit is less than 30 minutes",https://www.shl.com/products/assessments/cognitive-assessments/,0.7404114083278961
+"Job Description
+
+ Join a community that is shaping the future of work! 
+
+ SHL, People Science. People Answers. 
+
+Are you an AI enthusiastwith visionary thinking to conceptualize AI-based products? Are you looking to apply these skills in an environment where teamwork and collaboration are key to developing our digital product experiences? We are seeking a Research Engineer to join our team to deliver robust AI/ML models. You will closely work with the product team to spot opportunities to use AI in the current product stack and influence the product roadmap by incorporating AI-led features/products.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity, and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.
+
+What You Will Be Doing
+
+ Develop and experiment with machine learning models like NLP, computer vision etc. 
+ Prototype and fine-tune generative AI models for text, image, speech, and video generation. 
+ Implement emerging LLM technologies and monitoring tools. 
+ Manage the entire AI/ML lifecycle from research to deployment and maintenance. 
+ Optimize models for scalability, efficiency, and performance. 
+ Collaborate with ML engineers for solution delivery and propose AI-driven enhancements. 
+ Contribute to research, documentation, and publications with AI/ML advancements. 
+
+Essential
+
+What we are looking for from you:
+
+ Relevant experience in AI/ML - NLP, speech processing, and computer vision. 
+ Proficiency in Python and ML frameworks such as TensorFlow, PyTorch, & OpenAI APIs. 
+ Good knowledge of ML theory deep learning, and statistical modeling. 
+
+Desirable
+
+ Familiarity with Generative AI (LLMs & RAG). 
+ Experience in prototyping and deploying AI. 
+ Agile and proactive thinking. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent 
+
+#AIJobs #ResearchJobs #MLJobs
+
+#CareerOpportunities #JobOpportunities 
+
+About Us
+
+ We unlock the possibilities of businesses through the power of people, science and technology. 
+ We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation. 
+ When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale. 
+
+What SHL Can Offer You
+
+ Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL ) 
+ Employee benefits package that takes care of you and your family. 
+ Support, coaching, and on-the-job development to achieve career success 
+ A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL ) 
+ The ability to transform workplaces around the world for others. 
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Can you recommend some assessment that can help me screen applications. Time limit is less than 30 minutes",https://www.shl.com/products/assessments/personality-assessment/shl-motivation-questionnaire-mq/,0.7042998123749696
+"Job Description
+
+ Join a community that is shaping the future of work! 
+
+ SHL, People Science. People Answers. 
+
+Are you an AI enthusiastwith visionary thinking to conceptualize AI-based products? Are you looking to apply these skills in an environment where teamwork and collaboration are key to developing our digital product experiences? We are seeking a Research Engineer to join our team to deliver robust AI/ML models. You will closely work with the product team to spot opportunities to use AI in the current product stack and influence the product roadmap by incorporating AI-led features/products.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity, and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.
+
+What You Will Be Doing
+
+ Develop and experiment with machine learning models like NLP, computer vision etc. 
+ Prototype and fine-tune generative AI models for text, image, speech, and video generation. 
+ Implement emerging LLM technologies and monitoring tools. 
+ Manage the entire AI/ML lifecycle from research to deployment and maintenance. 
+ Optimize models for scalability, efficiency, and performance. 
+ Collaborate with ML engineers for solution delivery and propose AI-driven enhancements. 
+ Contribute to research, documentation, and publications with AI/ML advancements. 
+
+Essential
+
+What we are looking for from you:
+
+ Relevant experience in AI/ML - NLP, speech processing, and computer vision. 
+ Proficiency in Python and ML frameworks such as TensorFlow, PyTorch, & OpenAI APIs. 
+ Good knowledge of ML theory deep learning, and statistical modeling. 
+
+Desirable
+
+ Familiarity with Generative AI (LLMs & RAG). 
+ Experience in prototyping and deploying AI. 
+ Agile and proactive thinking. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent 
+
+#AIJobs #ResearchJobs #MLJobs
+
+#CareerOpportunities #JobOpportunities 
+
+About Us
+
+ We unlock the possibilities of businesses through the power of people, science and technology. 
+ We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation. 
+ When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale. 
+
+What SHL Can Offer You
+
+ Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL ) 
+ Employee benefits package that takes care of you and your family. 
+ Support, coaching, and on-the-job development to achieve career success 
+ A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL ) 
+ The ability to transform workplaces around the world for others. 
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Can you recommend some assessment that can help me screen applications. Time limit is less than 30 minutes",https://www.shl.com/products/assessments/behavioral-assessments/situation-judgement-tests-sjt/,0.6928580184549928
+"Job Description
+
+ Join a community that is shaping the future of work! 
+
+ SHL, People Science. People Answers. 
+
+Are you an AI enthusiastwith visionary thinking to conceptualize AI-based products? Are you looking to apply these skills in an environment where teamwork and collaboration are key to developing our digital product experiences? We are seeking a Research Engineer to join our team to deliver robust AI/ML models. You will closely work with the product team to spot opportunities to use AI in the current product stack and influence the product roadmap by incorporating AI-led features/products.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity, and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.
+
+What You Will Be Doing
+
+ Develop and experiment with machine learning models like NLP, computer vision etc. 
+ Prototype and fine-tune generative AI models for text, image, speech, and video generation. 
+ Implement emerging LLM technologies and monitoring tools. 
+ Manage the entire AI/ML lifecycle from research to deployment and maintenance. 
+ Optimize models for scalability, efficiency, and performance. 
+ Collaborate with ML engineers for solution delivery and propose AI-driven enhancements. 
+ Contribute to research, documentation, and publications with AI/ML advancements. 
+
+Essential
+
+What we are looking for from you:
+
+ Relevant experience in AI/ML - NLP, speech processing, and computer vision. 
+ Proficiency in Python and ML frameworks such as TensorFlow, PyTorch, & OpenAI APIs. 
+ Good knowledge of ML theory deep learning, and statistical modeling. 
+
+Desirable
+
+ Familiarity with Generative AI (LLMs & RAG). 
+ Experience in prototyping and deploying AI. 
+ Agile and proactive thinking. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent 
+
+#AIJobs #ResearchJobs #MLJobs
+
+#CareerOpportunities #JobOpportunities 
+
+About Us
+
+ We unlock the possibilities of businesses through the power of people, science and technology. 
+ We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation. 
+ When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale. 
+
+What SHL Can Offer You
+
+ Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL ) 
+ Employee benefits package that takes care of you and your family. 
+ Support, coaching, and on-the-job development to achieve career success 
+ A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL ) 
+ The ability to transform workplaces around the world for others. 
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Can you recommend some assessment that can help me screen applications. Time limit is less than 30 minutes",https://www.shl.com/products/assessments/skills-and-simulations/language-evaluation/,0.6475169855563534
+"Job Description
+
+ Join a community that is shaping the future of work! 
+
+ SHL, People Science. People Answers. 
+
+Are you an AI enthusiastwith visionary thinking to conceptualize AI-based products? Are you looking to apply these skills in an environment where teamwork and collaboration are key to developing our digital product experiences? We are seeking a Research Engineer to join our team to deliver robust AI/ML models. You will closely work with the product team to spot opportunities to use AI in the current product stack and influence the product roadmap by incorporating AI-led features/products.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity, and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.
+
+What You Will Be Doing
+
+ Develop and experiment with machine learning models like NLP, computer vision etc. 
+ Prototype and fine-tune generative AI models for text, image, speech, and video generation. 
+ Implement emerging LLM technologies and monitoring tools. 
+ Manage the entire AI/ML lifecycle from research to deployment and maintenance. 
+ Optimize models for scalability, efficiency, and performance. 
+ Collaborate with ML engineers for solution delivery and propose AI-driven enhancements. 
+ Contribute to research, documentation, and publications with AI/ML advancements. 
+
+Essential
+
+What we are looking for from you:
+
+ Relevant experience in AI/ML - NLP, speech processing, and computer vision. 
+ Proficiency in Python and ML frameworks such as TensorFlow, PyTorch, & OpenAI APIs. 
+ Good knowledge of ML theory deep learning, and statistical modeling. 
+
+Desirable
+
+ Familiarity with Generative AI (LLMs & RAG). 
+ Experience in prototyping and deploying AI. 
+ Agile and proactive thinking. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent 
+
+#AIJobs #ResearchJobs #MLJobs
+
+#CareerOpportunities #JobOpportunities 
+
+About Us
+
+ We unlock the possibilities of businesses through the power of people, science and technology. 
+ We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation. 
+ When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale. 
+
+What SHL Can Offer You
+
+ Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL ) 
+ Employee benefits package that takes care of you and your family. 
+ Support, coaching, and on-the-job development to achieve career success 
+ A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL ) 
+ The ability to transform workplaces around the world for others. 
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Can you recommend some assessment that can help me screen applications. Time limit is less than 30 minutes",https://www.shl.com/products/assessments/skills-and-simulations/coding-simulations/,0.6387563248847781
+"Job Description
+
+ Join a community that is shaping the future of work! 
+
+ SHL, People Science. People Answers. 
+
+Are you an AI enthusiastwith visionary thinking to conceptualize AI-based products? Are you looking to apply these skills in an environment where teamwork and collaboration are key to developing our digital product experiences? We are seeking a Research Engineer to join our team to deliver robust AI/ML models. You will closely work with the product team to spot opportunities to use AI in the current product stack and influence the product roadmap by incorporating AI-led features/products.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity, and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.
+
+What You Will Be Doing
+
+ Develop and experiment with machine learning models like NLP, computer vision etc. 
+ Prototype and fine-tune generative AI models for text, image, speech, and video generation. 
+ Implement emerging LLM technologies and monitoring tools. 
+ Manage the entire AI/ML lifecycle from research to deployment and maintenance. 
+ Optimize models for scalability, efficiency, and performance. 
+ Collaborate with ML engineers for solution delivery and propose AI-driven enhancements. 
+ Contribute to research, documentation, and publications with AI/ML advancements. 
+
+Essential
+
+What we are looking for from you:
+
+ Relevant experience in AI/ML - NLP, speech processing, and computer vision. 
+ Proficiency in Python and ML frameworks such as TensorFlow, PyTorch, & OpenAI APIs. 
+ Good knowledge of ML theory deep learning, and statistical modeling. 
+
+Desirable
+
+ Familiarity with Generative AI (LLMs & RAG). 
+ Experience in prototyping and deploying AI. 
+ Agile and proactive thinking. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent 
+
+#AIJobs #ResearchJobs #MLJobs
+
+#CareerOpportunities #JobOpportunities 
+
+About Us
+
+ We unlock the possibilities of businesses through the power of people, science and technology. 
+ We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation. 
+ When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale. 
+
+What SHL Can Offer You
+
+ Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL ) 
+ Employee benefits package that takes care of you and your family. 
+ Support, coaching, and on-the-job development to achieve career success 
+ A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL ) 
+ The ability to transform workplaces around the world for others. 
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Can you recommend some assessment that can help me screen applications. Time limit is less than 30 minutes",https://www.shl.com/products/assessments/skills-and-simulations/business-skills/,0.6301831266368215
+"Job Description
+
+ Join a community that is shaping the future of work! 
+
+ SHL, People Science. People Answers. 
+
+Are you an AI enthusiastwith visionary thinking to conceptualize AI-based products? Are you looking to apply these skills in an environment where teamwork and collaboration are key to developing our digital product experiences? We are seeking a Research Engineer to join our team to deliver robust AI/ML models. You will closely work with the product team to spot opportunities to use AI in the current product stack and influence the product roadmap by incorporating AI-led features/products.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity, and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.
+
+What You Will Be Doing
+
+ Develop and experiment with machine learning models like NLP, computer vision etc. 
+ Prototype and fine-tune generative AI models for text, image, speech, and video generation. 
+ Implement emerging LLM technologies and monitoring tools. 
+ Manage the entire AI/ML lifecycle from research to deployment and maintenance. 
+ Optimize models for scalability, efficiency, and performance. 
+ Collaborate with ML engineers for solution delivery and propose AI-driven enhancements. 
+ Contribute to research, documentation, and publications with AI/ML advancements. 
+
+Essential
+
+What we are looking for from you:
+
+ Relevant experience in AI/ML - NLP, speech processing, and computer vision. 
+ Proficiency in Python and ML frameworks such as TensorFlow, PyTorch, & OpenAI APIs. 
+ Good knowledge of ML theory deep learning, and statistical modeling. 
+
+Desirable
+
+ Familiarity with Generative AI (LLMs & RAG). 
+ Experience in prototyping and deploying AI. 
+ Agile and proactive thinking. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent 
+
+#AIJobs #ResearchJobs #MLJobs
+
+#CareerOpportunities #JobOpportunities 
+
+About Us
+
+ We unlock the possibilities of businesses through the power of people, science and technology. 
+ We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation. 
+ When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale. 
+
+What SHL Can Offer You
+
+ Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL ) 
+ Employee benefits package that takes care of you and your family. 
+ Support, coaching, and on-the-job development to achieve career success 
+ A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL ) 
+ The ability to transform workplaces around the world for others. 
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Can you recommend some assessment that can help me screen applications. Time limit is less than 30 minutes",https://www.shl.com/products/assessments/skills-and-simulations/technical-skills/,0.6214162592446625
+"Job Description
+
+ Join a community that is shaping the future of work! 
+
+ SHL, People Science. People Answers. 
+
+Are you an AI enthusiastwith visionary thinking to conceptualize AI-based products? Are you looking to apply these skills in an environment where teamwork and collaboration are key to developing our digital product experiences? We are seeking a Research Engineer to join our team to deliver robust AI/ML models. You will closely work with the product team to spot opportunities to use AI in the current product stack and influence the product roadmap by incorporating AI-led features/products.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity, and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.
+
+What You Will Be Doing
+
+ Develop and experiment with machine learning models like NLP, computer vision etc. 
+ Prototype and fine-tune generative AI models for text, image, speech, and video generation. 
+ Implement emerging LLM technologies and monitoring tools. 
+ Manage the entire AI/ML lifecycle from research to deployment and maintenance. 
+ Optimize models for scalability, efficiency, and performance. 
+ Collaborate with ML engineers for solution delivery and propose AI-driven enhancements. 
+ Contribute to research, documentation, and publications with AI/ML advancements. 
+
+Essential
+
+What we are looking for from you:
+
+ Relevant experience in AI/ML - NLP, speech processing, and computer vision. 
+ Proficiency in Python and ML frameworks such as TensorFlow, PyTorch, & OpenAI APIs. 
+ Good knowledge of ML theory deep learning, and statistical modeling. 
+
+Desirable
+
+ Familiarity with Generative AI (LLMs & RAG). 
+ Experience in prototyping and deploying AI. 
+ Agile and proactive thinking. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent 
+
+#AIJobs #ResearchJobs #MLJobs
+
+#CareerOpportunities #JobOpportunities 
+
+About Us
+
+ We unlock the possibilities of businesses through the power of people, science and technology. 
+ We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation. 
+ When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale. 
+
+What SHL Can Offer You
+
+ Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL ) 
+ Employee benefits package that takes care of you and your family. 
+ Support, coaching, and on-the-job development to achieve career success 
+ A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL ) 
+ The ability to transform workplaces around the world for others. 
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Can you recommend some assessment that can help me screen applications. Time limit is less than 30 minutes",https://www.shl.com/products/assessments/assessment-and-development-centers/,0.586469513775452
+"Job Description
+
+ Join a community that is shaping the future of work! 
+
+ SHL, People Science. People Answers. 
+
+Are you an AI enthusiastwith visionary thinking to conceptualize AI-based products? Are you looking to apply these skills in an environment where teamwork and collaboration are key to developing our digital product experiences? We are seeking a Research Engineer to join our team to deliver robust AI/ML models. You will closely work with the product team to spot opportunities to use AI in the current product stack and influence the product roadmap by incorporating AI-led features/products.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity, and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.
+
+What You Will Be Doing
+
+ Develop and experiment with machine learning models like NLP, computer vision etc. 
+ Prototype and fine-tune generative AI models for text, image, speech, and video generation. 
+ Implement emerging LLM technologies and monitoring tools. 
+ Manage the entire AI/ML lifecycle from research to deployment and maintenance. 
+ Optimize models for scalability, efficiency, and performance. 
+ Collaborate with ML engineers for solution delivery and propose AI-driven enhancements. 
+ Contribute to research, documentation, and publications with AI/ML advancements. 
+
+Essential
+
+What we are looking for from you:
+
+ Relevant experience in AI/ML - NLP, speech processing, and computer vision. 
+ Proficiency in Python and ML frameworks such as TensorFlow, PyTorch, & OpenAI APIs. 
+ Good knowledge of ML theory deep learning, and statistical modeling. 
+
+Desirable
+
+ Familiarity with Generative AI (LLMs & RAG). 
+ Experience in prototyping and deploying AI. 
+ Agile and proactive thinking. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent 
+
+#AIJobs #ResearchJobs #MLJobs
+
+#CareerOpportunities #JobOpportunities 
+
+About Us
+
+ We unlock the possibilities of businesses through the power of people, science and technology. 
+ We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation. 
+ When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale. 
+
+What SHL Can Offer You
+
+ Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL ) 
+ Employee benefits package that takes care of you and your family. 
+ Support, coaching, and on-the-job development to achieve career success 
+ A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL ) 
+ The ability to transform workplaces around the world for others. 
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Can you recommend some assessment that can help me screen applications. Time limit is less than 30 minutes",https://www.shl.com/products/product-catalog/view/automata-new/,0.5841302016473341
+"I am hiring for an analyst and wants applications to screen using Cognitive and personality tests, what options are available within 45 mins.",https://www.shl.com/products/assessments/personality-assessment/,1.0
+"I am hiring for an analyst and wants applications to screen using Cognitive and personality tests, what options are available within 45 mins.",https://www.shl.com/products/assessments/behavioral-assessments/situation-judgement-tests-sjt/,0.98169391260547
+"I am hiring for an analyst and wants applications to screen using Cognitive and personality tests, what options are available within 45 mins.",https://www.shl.com/products/product-catalog/view/verify-general-ability-screen/,0.9370979659393802
+"I am hiring for an analyst and wants applications to screen using Cognitive and personality tests, what options are available within 45 mins.",https://www.shl.com/products/assessments/skills-and-simulations/coding-simulations/,0.9071349239740334
+"I am hiring for an analyst and wants applications to screen using Cognitive and personality tests, what options are available within 45 mins.",https://www.shl.com/products/assessments/personality-assessment/shl-motivation-questionnaire-mq/,0.8973601627609842
+"I am hiring for an analyst and wants applications to screen using Cognitive and personality tests, what options are available within 45 mins.",https://www.shl.com/products/product-catalog/view/multitasking-ability/,0.8419808346738201
+"I am hiring for an analyst and wants applications to screen using Cognitive and personality tests, what options are available within 45 mins.",https://www.shl.com/products/assessments/cognitive-assessments/,0.8372098058026732
+"I am hiring for an analyst and wants applications to screen using Cognitive and personality tests, what options are available within 45 mins.",https://www.shl.com/products/product-catalog/view/interviewing-and-hiring-concepts-u-s/,0.8295636629427072
+"I am hiring for an analyst and wants applications to screen using Cognitive and personality tests, what options are available within 45 mins.",https://www.shl.com/products/product-catalog/view/data-entry-ten-key-split-screen/,0.8251755282728517
+"I am hiring for an analyst and wants applications to screen using Cognitive and personality tests, what options are available within 45 mins.",https://www.shl.com/products/product-catalog/view/automata-new/,0.774110519146367
+"I have a JD Job Description
+
+ People Science. People Answers  !
+
+Do you love contributing to commercial growth and success? Join as a Presales Specialist! In this role, you’ll support the Presales function and commercial teams by building custom client demos, developing RFP responses, writing high quality Statements of Work, ensuring our deals are appropriately scoped and priced.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture. There is a huge investment in SHL currently so there ’ s no better time to become a part of something transformational. Hybrid working is available
+
+This role is based in the US. Candidates must be eligible to work in the US without sponsorship. SHL does not offer visa sponsorship.
+
+The Presales Specialist is responsible for creating, curating, and presenting compelling content to support the Solution Architects and Sales team during the presales phase. This includes:
+
+ Building custom demos 
+ Responding to RFPs 
+ Maintaining knowledge of SHL commercial offerings, pricing, and platforms. 
+ Scoping support for commercial opportunities 
+ Creating compelling proposals 
+ Presenting Solution Vision to Customers 
+ Ensuring successful handover from pre-sales to delivery teams 
+ Maintaining domain expertise in the Talent Intelligence and HCM space 
+
+Key Responsibilities
+
+ Content Creation and Customization: 
+
+ Develop customized content, including proposal (RFI/RFP) presentations, product demos and Word/Excel proposals, to support the presales process. 
+ Create engaging content that clearly communicates the value proposition of SHL’s solutions and services 
+ Collaborate with Solution Architects and sales teams to ensure content aligns with client requirements, business goals, strategy 
+
+ Collaboration with Sales and Technical (CoE) Teams: 
+
+ Work closely with Centre of Excellence to understand client technical requirements and submission planning. 
+ Professional Services: be an expert on what products and services we deliver. Ensure all aspects of client engagements can be delivered and set realistic timelines 
+ Product: Allowing a solid understanding of our solutions and stay appraised of digital roadmap and releases 
+
+Customer Engagement
+
+ Support sales teams getting ready for client meetings, demos, and presentations 
+ Help refine product positioning and messaging to resonate with the client’s industry and business context. 
+
+Content Strategy And Development
+
+ Develop and maintain a local library of reusable content, templates, and resources for presales presentations, proposals, and client demos. 
+ Continuously assess the effectiveness of content and iterate based on client feedback and sales outcomes. 
+ Stay up to date with industry trends, competitor content, and customer preferences to enhance content quality 
+
+ Required Skills and Qualifications: 
+
+ Qualification in Technology, Marketing, Communications, Business, or a related field 
+ Ideally 2-4 years of experience in a Presales or commercial operations preferably within a technology, SaaS or services industry. 
+ Strong writing, editing, and presentation skills with an ability to craft clear, persuasive, and engaging content. 
+ Experience with design tools (e.g., PowerPoint, Synthesia, Adobe, Canva). 
+ Strong communication and collaboration skills to work cross-functional teams. 
+ Ability to quickly understand customer needs and develop content that resonates with different audiences. 
+ Attention to detail and ability to manage multiple content development projects simultaneously. 
+ Utility player! You thrive in the unknown and enjoy wearing multiple hats 
+
+Desirable
+
+ Presales tools: Walnut, Custom Report Developer tools 
+ Marketing skills: Canva, Synthesia 
+ Contracting skills: Experience writing Statements of work 
+ Proposal skills: populating responses to RFPs, Loopio 
+ Technical skills: understanding of HR technology and workflows. Experience solutioning complex integrations. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable Talent Acquisition team. Choose a new path with SHL. 
+
+#PreSalesOperations #SHL #CareersAtSHL 
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Here and I have want them to give a test which is atleast  30 mins long",https://www.shl.com/products/assessments/cognitive-assessments/,1.0189574080854225
+"I have a JD Job Description
+
+ People Science. People Answers  !
+
+Do you love contributing to commercial growth and success? Join as a Presales Specialist! In this role, you’ll support the Presales function and commercial teams by building custom client demos, developing RFP responses, writing high quality Statements of Work, ensuring our deals are appropriately scoped and priced.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture. There is a huge investment in SHL currently so there ’ s no better time to become a part of something transformational. Hybrid working is available
+
+This role is based in the US. Candidates must be eligible to work in the US without sponsorship. SHL does not offer visa sponsorship.
+
+The Presales Specialist is responsible for creating, curating, and presenting compelling content to support the Solution Architects and Sales team during the presales phase. This includes:
+
+ Building custom demos 
+ Responding to RFPs 
+ Maintaining knowledge of SHL commercial offerings, pricing, and platforms. 
+ Scoping support for commercial opportunities 
+ Creating compelling proposals 
+ Presenting Solution Vision to Customers 
+ Ensuring successful handover from pre-sales to delivery teams 
+ Maintaining domain expertise in the Talent Intelligence and HCM space 
+
+Key Responsibilities
+
+ Content Creation and Customization: 
+
+ Develop customized content, including proposal (RFI/RFP) presentations, product demos and Word/Excel proposals, to support the presales process. 
+ Create engaging content that clearly communicates the value proposition of SHL’s solutions and services 
+ Collaborate with Solution Architects and sales teams to ensure content aligns with client requirements, business goals, strategy 
+
+ Collaboration with Sales and Technical (CoE) Teams: 
+
+ Work closely with Centre of Excellence to understand client technical requirements and submission planning. 
+ Professional Services: be an expert on what products and services we deliver. Ensure all aspects of client engagements can be delivered and set realistic timelines 
+ Product: Allowing a solid understanding of our solutions and stay appraised of digital roadmap and releases 
+
+Customer Engagement
+
+ Support sales teams getting ready for client meetings, demos, and presentations 
+ Help refine product positioning and messaging to resonate with the client’s industry and business context. 
+
+Content Strategy And Development
+
+ Develop and maintain a local library of reusable content, templates, and resources for presales presentations, proposals, and client demos. 
+ Continuously assess the effectiveness of content and iterate based on client feedback and sales outcomes. 
+ Stay up to date with industry trends, competitor content, and customer preferences to enhance content quality 
+
+ Required Skills and Qualifications: 
+
+ Qualification in Technology, Marketing, Communications, Business, or a related field 
+ Ideally 2-4 years of experience in a Presales or commercial operations preferably within a technology, SaaS or services industry. 
+ Strong writing, editing, and presentation skills with an ability to craft clear, persuasive, and engaging content. 
+ Experience with design tools (e.g., PowerPoint, Synthesia, Adobe, Canva). 
+ Strong communication and collaboration skills to work cross-functional teams. 
+ Ability to quickly understand customer needs and develop content that resonates with different audiences. 
+ Attention to detail and ability to manage multiple content development projects simultaneously. 
+ Utility player! You thrive in the unknown and enjoy wearing multiple hats 
+
+Desirable
+
+ Presales tools: Walnut, Custom Report Developer tools 
+ Marketing skills: Canva, Synthesia 
+ Contracting skills: Experience writing Statements of work 
+ Proposal skills: populating responses to RFPs, Loopio 
+ Technical skills: understanding of HR technology and workflows. Experience solutioning complex integrations. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable Talent Acquisition team. Choose a new path with SHL. 
+
+#PreSalesOperations #SHL #CareersAtSHL 
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Here and I have want them to give a test which is atleast  30 mins long",https://www.shl.com/products/assessments/skills-and-simulations/business-skills/,1.0
+"I have a JD Job Description
+
+ People Science. People Answers  !
+
+Do you love contributing to commercial growth and success? Join as a Presales Specialist! In this role, you’ll support the Presales function and commercial teams by building custom client demos, developing RFP responses, writing high quality Statements of Work, ensuring our deals are appropriately scoped and priced.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture. There is a huge investment in SHL currently so there ’ s no better time to become a part of something transformational. Hybrid working is available
+
+This role is based in the US. Candidates must be eligible to work in the US without sponsorship. SHL does not offer visa sponsorship.
+
+The Presales Specialist is responsible for creating, curating, and presenting compelling content to support the Solution Architects and Sales team during the presales phase. This includes:
+
+ Building custom demos 
+ Responding to RFPs 
+ Maintaining knowledge of SHL commercial offerings, pricing, and platforms. 
+ Scoping support for commercial opportunities 
+ Creating compelling proposals 
+ Presenting Solution Vision to Customers 
+ Ensuring successful handover from pre-sales to delivery teams 
+ Maintaining domain expertise in the Talent Intelligence and HCM space 
+
+Key Responsibilities
+
+ Content Creation and Customization: 
+
+ Develop customized content, including proposal (RFI/RFP) presentations, product demos and Word/Excel proposals, to support the presales process. 
+ Create engaging content that clearly communicates the value proposition of SHL’s solutions and services 
+ Collaborate with Solution Architects and sales teams to ensure content aligns with client requirements, business goals, strategy 
+
+ Collaboration with Sales and Technical (CoE) Teams: 
+
+ Work closely with Centre of Excellence to understand client technical requirements and submission planning. 
+ Professional Services: be an expert on what products and services we deliver. Ensure all aspects of client engagements can be delivered and set realistic timelines 
+ Product: Allowing a solid understanding of our solutions and stay appraised of digital roadmap and releases 
+
+Customer Engagement
+
+ Support sales teams getting ready for client meetings, demos, and presentations 
+ Help refine product positioning and messaging to resonate with the client’s industry and business context. 
+
+Content Strategy And Development
+
+ Develop and maintain a local library of reusable content, templates, and resources for presales presentations, proposals, and client demos. 
+ Continuously assess the effectiveness of content and iterate based on client feedback and sales outcomes. 
+ Stay up to date with industry trends, competitor content, and customer preferences to enhance content quality 
+
+ Required Skills and Qualifications: 
+
+ Qualification in Technology, Marketing, Communications, Business, or a related field 
+ Ideally 2-4 years of experience in a Presales or commercial operations preferably within a technology, SaaS or services industry. 
+ Strong writing, editing, and presentation skills with an ability to craft clear, persuasive, and engaging content. 
+ Experience with design tools (e.g., PowerPoint, Synthesia, Adobe, Canva). 
+ Strong communication and collaboration skills to work cross-functional teams. 
+ Ability to quickly understand customer needs and develop content that resonates with different audiences. 
+ Attention to detail and ability to manage multiple content development projects simultaneously. 
+ Utility player! You thrive in the unknown and enjoy wearing multiple hats 
+
+Desirable
+
+ Presales tools: Walnut, Custom Report Developer tools 
+ Marketing skills: Canva, Synthesia 
+ Contracting skills: Experience writing Statements of work 
+ Proposal skills: populating responses to RFPs, Loopio 
+ Technical skills: understanding of HR technology and workflows. Experience solutioning complex integrations. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable Talent Acquisition team. Choose a new path with SHL. 
+
+#PreSalesOperations #SHL #CareersAtSHL 
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Here and I have want them to give a test which is atleast  30 mins long",https://www.shl.com/products/assessments/job-focused-assessments/,0.9250628791729317
+"I have a JD Job Description
+
+ People Science. People Answers  !
+
+Do you love contributing to commercial growth and success? Join as a Presales Specialist! In this role, you’ll support the Presales function and commercial teams by building custom client demos, developing RFP responses, writing high quality Statements of Work, ensuring our deals are appropriately scoped and priced.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture. There is a huge investment in SHL currently so there ’ s no better time to become a part of something transformational. Hybrid working is available
+
+This role is based in the US. Candidates must be eligible to work in the US without sponsorship. SHL does not offer visa sponsorship.
+
+The Presales Specialist is responsible for creating, curating, and presenting compelling content to support the Solution Architects and Sales team during the presales phase. This includes:
+
+ Building custom demos 
+ Responding to RFPs 
+ Maintaining knowledge of SHL commercial offerings, pricing, and platforms. 
+ Scoping support for commercial opportunities 
+ Creating compelling proposals 
+ Presenting Solution Vision to Customers 
+ Ensuring successful handover from pre-sales to delivery teams 
+ Maintaining domain expertise in the Talent Intelligence and HCM space 
+
+Key Responsibilities
+
+ Content Creation and Customization: 
+
+ Develop customized content, including proposal (RFI/RFP) presentations, product demos and Word/Excel proposals, to support the presales process. 
+ Create engaging content that clearly communicates the value proposition of SHL’s solutions and services 
+ Collaborate with Solution Architects and sales teams to ensure content aligns with client requirements, business goals, strategy 
+
+ Collaboration with Sales and Technical (CoE) Teams: 
+
+ Work closely with Centre of Excellence to understand client technical requirements and submission planning. 
+ Professional Services: be an expert on what products and services we deliver. Ensure all aspects of client engagements can be delivered and set realistic timelines 
+ Product: Allowing a solid understanding of our solutions and stay appraised of digital roadmap and releases 
+
+Customer Engagement
+
+ Support sales teams getting ready for client meetings, demos, and presentations 
+ Help refine product positioning and messaging to resonate with the client’s industry and business context. 
+
+Content Strategy And Development
+
+ Develop and maintain a local library of reusable content, templates, and resources for presales presentations, proposals, and client demos. 
+ Continuously assess the effectiveness of content and iterate based on client feedback and sales outcomes. 
+ Stay up to date with industry trends, competitor content, and customer preferences to enhance content quality 
+
+ Required Skills and Qualifications: 
+
+ Qualification in Technology, Marketing, Communications, Business, or a related field 
+ Ideally 2-4 years of experience in a Presales or commercial operations preferably within a technology, SaaS or services industry. 
+ Strong writing, editing, and presentation skills with an ability to craft clear, persuasive, and engaging content. 
+ Experience with design tools (e.g., PowerPoint, Synthesia, Adobe, Canva). 
+ Strong communication and collaboration skills to work cross-functional teams. 
+ Ability to quickly understand customer needs and develop content that resonates with different audiences. 
+ Attention to detail and ability to manage multiple content development projects simultaneously. 
+ Utility player! You thrive in the unknown and enjoy wearing multiple hats 
+
+Desirable
+
+ Presales tools: Walnut, Custom Report Developer tools 
+ Marketing skills: Canva, Synthesia 
+ Contracting skills: Experience writing Statements of work 
+ Proposal skills: populating responses to RFPs, Loopio 
+ Technical skills: understanding of HR technology and workflows. Experience solutioning complex integrations. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable Talent Acquisition team. Choose a new path with SHL. 
+
+#PreSalesOperations #SHL #CareersAtSHL 
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Here and I have want them to give a test which is atleast  30 mins long",https://www.shl.com/products/assessments/personality-assessment/shl-motivation-questionnaire-mq/,0.9152713172574237
+"I have a JD Job Description
+
+ People Science. People Answers  !
+
+Do you love contributing to commercial growth and success? Join as a Presales Specialist! In this role, you’ll support the Presales function and commercial teams by building custom client demos, developing RFP responses, writing high quality Statements of Work, ensuring our deals are appropriately scoped and priced.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture. There is a huge investment in SHL currently so there ’ s no better time to become a part of something transformational. Hybrid working is available
+
+This role is based in the US. Candidates must be eligible to work in the US without sponsorship. SHL does not offer visa sponsorship.
+
+The Presales Specialist is responsible for creating, curating, and presenting compelling content to support the Solution Architects and Sales team during the presales phase. This includes:
+
+ Building custom demos 
+ Responding to RFPs 
+ Maintaining knowledge of SHL commercial offerings, pricing, and platforms. 
+ Scoping support for commercial opportunities 
+ Creating compelling proposals 
+ Presenting Solution Vision to Customers 
+ Ensuring successful handover from pre-sales to delivery teams 
+ Maintaining domain expertise in the Talent Intelligence and HCM space 
+
+Key Responsibilities
+
+ Content Creation and Customization: 
+
+ Develop customized content, including proposal (RFI/RFP) presentations, product demos and Word/Excel proposals, to support the presales process. 
+ Create engaging content that clearly communicates the value proposition of SHL’s solutions and services 
+ Collaborate with Solution Architects and sales teams to ensure content aligns with client requirements, business goals, strategy 
+
+ Collaboration with Sales and Technical (CoE) Teams: 
+
+ Work closely with Centre of Excellence to understand client technical requirements and submission planning. 
+ Professional Services: be an expert on what products and services we deliver. Ensure all aspects of client engagements can be delivered and set realistic timelines 
+ Product: Allowing a solid understanding of our solutions and stay appraised of digital roadmap and releases 
+
+Customer Engagement
+
+ Support sales teams getting ready for client meetings, demos, and presentations 
+ Help refine product positioning and messaging to resonate with the client’s industry and business context. 
+
+Content Strategy And Development
+
+ Develop and maintain a local library of reusable content, templates, and resources for presales presentations, proposals, and client demos. 
+ Continuously assess the effectiveness of content and iterate based on client feedback and sales outcomes. 
+ Stay up to date with industry trends, competitor content, and customer preferences to enhance content quality 
+
+ Required Skills and Qualifications: 
+
+ Qualification in Technology, Marketing, Communications, Business, or a related field 
+ Ideally 2-4 years of experience in a Presales or commercial operations preferably within a technology, SaaS or services industry. 
+ Strong writing, editing, and presentation skills with an ability to craft clear, persuasive, and engaging content. 
+ Experience with design tools (e.g., PowerPoint, Synthesia, Adobe, Canva). 
+ Strong communication and collaboration skills to work cross-functional teams. 
+ Ability to quickly understand customer needs and develop content that resonates with different audiences. 
+ Attention to detail and ability to manage multiple content development projects simultaneously. 
+ Utility player! You thrive in the unknown and enjoy wearing multiple hats 
+
+Desirable
+
+ Presales tools: Walnut, Custom Report Developer tools 
+ Marketing skills: Canva, Synthesia 
+ Contracting skills: Experience writing Statements of work 
+ Proposal skills: populating responses to RFPs, Loopio 
+ Technical skills: understanding of HR technology and workflows. Experience solutioning complex integrations. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable Talent Acquisition team. Choose a new path with SHL. 
+
+#PreSalesOperations #SHL #CareersAtSHL 
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Here and I have want them to give a test which is atleast  30 mins long",https://www.shl.com/products/assessments/assessment-and-development-centers/,0.874573375606116
+"I have a JD Job Description
+
+ People Science. People Answers  !
+
+Do you love contributing to commercial growth and success? Join as a Presales Specialist! In this role, you’ll support the Presales function and commercial teams by building custom client demos, developing RFP responses, writing high quality Statements of Work, ensuring our deals are appropriately scoped and priced.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture. There is a huge investment in SHL currently so there ’ s no better time to become a part of something transformational. Hybrid working is available
+
+This role is based in the US. Candidates must be eligible to work in the US without sponsorship. SHL does not offer visa sponsorship.
+
+The Presales Specialist is responsible for creating, curating, and presenting compelling content to support the Solution Architects and Sales team during the presales phase. This includes:
+
+ Building custom demos 
+ Responding to RFPs 
+ Maintaining knowledge of SHL commercial offerings, pricing, and platforms. 
+ Scoping support for commercial opportunities 
+ Creating compelling proposals 
+ Presenting Solution Vision to Customers 
+ Ensuring successful handover from pre-sales to delivery teams 
+ Maintaining domain expertise in the Talent Intelligence and HCM space 
+
+Key Responsibilities
+
+ Content Creation and Customization: 
+
+ Develop customized content, including proposal (RFI/RFP) presentations, product demos and Word/Excel proposals, to support the presales process. 
+ Create engaging content that clearly communicates the value proposition of SHL’s solutions and services 
+ Collaborate with Solution Architects and sales teams to ensure content aligns with client requirements, business goals, strategy 
+
+ Collaboration with Sales and Technical (CoE) Teams: 
+
+ Work closely with Centre of Excellence to understand client technical requirements and submission planning. 
+ Professional Services: be an expert on what products and services we deliver. Ensure all aspects of client engagements can be delivered and set realistic timelines 
+ Product: Allowing a solid understanding of our solutions and stay appraised of digital roadmap and releases 
+
+Customer Engagement
+
+ Support sales teams getting ready for client meetings, demos, and presentations 
+ Help refine product positioning and messaging to resonate with the client’s industry and business context. 
+
+Content Strategy And Development
+
+ Develop and maintain a local library of reusable content, templates, and resources for presales presentations, proposals, and client demos. 
+ Continuously assess the effectiveness of content and iterate based on client feedback and sales outcomes. 
+ Stay up to date with industry trends, competitor content, and customer preferences to enhance content quality 
+
+ Required Skills and Qualifications: 
+
+ Qualification in Technology, Marketing, Communications, Business, or a related field 
+ Ideally 2-4 years of experience in a Presales or commercial operations preferably within a technology, SaaS or services industry. 
+ Strong writing, editing, and presentation skills with an ability to craft clear, persuasive, and engaging content. 
+ Experience with design tools (e.g., PowerPoint, Synthesia, Adobe, Canva). 
+ Strong communication and collaboration skills to work cross-functional teams. 
+ Ability to quickly understand customer needs and develop content that resonates with different audiences. 
+ Attention to detail and ability to manage multiple content development projects simultaneously. 
+ Utility player! You thrive in the unknown and enjoy wearing multiple hats 
+
+Desirable
+
+ Presales tools: Walnut, Custom Report Developer tools 
+ Marketing skills: Canva, Synthesia 
+ Contracting skills: Experience writing Statements of work 
+ Proposal skills: populating responses to RFPs, Loopio 
+ Technical skills: understanding of HR technology and workflows. Experience solutioning complex integrations. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable Talent Acquisition team. Choose a new path with SHL. 
+
+#PreSalesOperations #SHL #CareersAtSHL 
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Here and I have want them to give a test which is atleast  30 mins long",https://www.shl.com/products/assessments/skills-and-simulations/coding-simulations/,0.8483351467620267
+"I have a JD Job Description
+
+ People Science. People Answers  !
+
+Do you love contributing to commercial growth and success? Join as a Presales Specialist! In this role, you’ll support the Presales function and commercial teams by building custom client demos, developing RFP responses, writing high quality Statements of Work, ensuring our deals are appropriately scoped and priced.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture. There is a huge investment in SHL currently so there ’ s no better time to become a part of something transformational. Hybrid working is available
+
+This role is based in the US. Candidates must be eligible to work in the US without sponsorship. SHL does not offer visa sponsorship.
+
+The Presales Specialist is responsible for creating, curating, and presenting compelling content to support the Solution Architects and Sales team during the presales phase. This includes:
+
+ Building custom demos 
+ Responding to RFPs 
+ Maintaining knowledge of SHL commercial offerings, pricing, and platforms. 
+ Scoping support for commercial opportunities 
+ Creating compelling proposals 
+ Presenting Solution Vision to Customers 
+ Ensuring successful handover from pre-sales to delivery teams 
+ Maintaining domain expertise in the Talent Intelligence and HCM space 
+
+Key Responsibilities
+
+ Content Creation and Customization: 
+
+ Develop customized content, including proposal (RFI/RFP) presentations, product demos and Word/Excel proposals, to support the presales process. 
+ Create engaging content that clearly communicates the value proposition of SHL’s solutions and services 
+ Collaborate with Solution Architects and sales teams to ensure content aligns with client requirements, business goals, strategy 
+
+ Collaboration with Sales and Technical (CoE) Teams: 
+
+ Work closely with Centre of Excellence to understand client technical requirements and submission planning. 
+ Professional Services: be an expert on what products and services we deliver. Ensure all aspects of client engagements can be delivered and set realistic timelines 
+ Product: Allowing a solid understanding of our solutions and stay appraised of digital roadmap and releases 
+
+Customer Engagement
+
+ Support sales teams getting ready for client meetings, demos, and presentations 
+ Help refine product positioning and messaging to resonate with the client’s industry and business context. 
+
+Content Strategy And Development
+
+ Develop and maintain a local library of reusable content, templates, and resources for presales presentations, proposals, and client demos. 
+ Continuously assess the effectiveness of content and iterate based on client feedback and sales outcomes. 
+ Stay up to date with industry trends, competitor content, and customer preferences to enhance content quality 
+
+ Required Skills and Qualifications: 
+
+ Qualification in Technology, Marketing, Communications, Business, or a related field 
+ Ideally 2-4 years of experience in a Presales or commercial operations preferably within a technology, SaaS or services industry. 
+ Strong writing, editing, and presentation skills with an ability to craft clear, persuasive, and engaging content. 
+ Experience with design tools (e.g., PowerPoint, Synthesia, Adobe, Canva). 
+ Strong communication and collaboration skills to work cross-functional teams. 
+ Ability to quickly understand customer needs and develop content that resonates with different audiences. 
+ Attention to detail and ability to manage multiple content development projects simultaneously. 
+ Utility player! You thrive in the unknown and enjoy wearing multiple hats 
+
+Desirable
+
+ Presales tools: Walnut, Custom Report Developer tools 
+ Marketing skills: Canva, Synthesia 
+ Contracting skills: Experience writing Statements of work 
+ Proposal skills: populating responses to RFPs, Loopio 
+ Technical skills: understanding of HR technology and workflows. Experience solutioning complex integrations. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable Talent Acquisition team. Choose a new path with SHL. 
+
+#PreSalesOperations #SHL #CareersAtSHL 
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Here and I have want them to give a test which is atleast  30 mins long",https://www.shl.com/products/product-catalog/view/software-business-analysis/,0.8433012072884136
+"I have a JD Job Description
+
+ People Science. People Answers  !
+
+Do you love contributing to commercial growth and success? Join as a Presales Specialist! In this role, you’ll support the Presales function and commercial teams by building custom client demos, developing RFP responses, writing high quality Statements of Work, ensuring our deals are appropriately scoped and priced.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture. There is a huge investment in SHL currently so there ’ s no better time to become a part of something transformational. Hybrid working is available
+
+This role is based in the US. Candidates must be eligible to work in the US without sponsorship. SHL does not offer visa sponsorship.
+
+The Presales Specialist is responsible for creating, curating, and presenting compelling content to support the Solution Architects and Sales team during the presales phase. This includes:
+
+ Building custom demos 
+ Responding to RFPs 
+ Maintaining knowledge of SHL commercial offerings, pricing, and platforms. 
+ Scoping support for commercial opportunities 
+ Creating compelling proposals 
+ Presenting Solution Vision to Customers 
+ Ensuring successful handover from pre-sales to delivery teams 
+ Maintaining domain expertise in the Talent Intelligence and HCM space 
+
+Key Responsibilities
+
+ Content Creation and Customization: 
+
+ Develop customized content, including proposal (RFI/RFP) presentations, product demos and Word/Excel proposals, to support the presales process. 
+ Create engaging content that clearly communicates the value proposition of SHL’s solutions and services 
+ Collaborate with Solution Architects and sales teams to ensure content aligns with client requirements, business goals, strategy 
+
+ Collaboration with Sales and Technical (CoE) Teams: 
+
+ Work closely with Centre of Excellence to understand client technical requirements and submission planning. 
+ Professional Services: be an expert on what products and services we deliver. Ensure all aspects of client engagements can be delivered and set realistic timelines 
+ Product: Allowing a solid understanding of our solutions and stay appraised of digital roadmap and releases 
+
+Customer Engagement
+
+ Support sales teams getting ready for client meetings, demos, and presentations 
+ Help refine product positioning and messaging to resonate with the client’s industry and business context. 
+
+Content Strategy And Development
+
+ Develop and maintain a local library of reusable content, templates, and resources for presales presentations, proposals, and client demos. 
+ Continuously assess the effectiveness of content and iterate based on client feedback and sales outcomes. 
+ Stay up to date with industry trends, competitor content, and customer preferences to enhance content quality 
+
+ Required Skills and Qualifications: 
+
+ Qualification in Technology, Marketing, Communications, Business, or a related field 
+ Ideally 2-4 years of experience in a Presales or commercial operations preferably within a technology, SaaS or services industry. 
+ Strong writing, editing, and presentation skills with an ability to craft clear, persuasive, and engaging content. 
+ Experience with design tools (e.g., PowerPoint, Synthesia, Adobe, Canva). 
+ Strong communication and collaboration skills to work cross-functional teams. 
+ Ability to quickly understand customer needs and develop content that resonates with different audiences. 
+ Attention to detail and ability to manage multiple content development projects simultaneously. 
+ Utility player! You thrive in the unknown and enjoy wearing multiple hats 
+
+Desirable
+
+ Presales tools: Walnut, Custom Report Developer tools 
+ Marketing skills: Canva, Synthesia 
+ Contracting skills: Experience writing Statements of work 
+ Proposal skills: populating responses to RFPs, Loopio 
+ Technical skills: understanding of HR technology and workflows. Experience solutioning complex integrations. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable Talent Acquisition team. Choose a new path with SHL. 
+
+#PreSalesOperations #SHL #CareersAtSHL 
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Here and I have want them to give a test which is atleast  30 mins long",https://www.shl.com/products/product-catalog/view/retail-sales-and-service-simulation/,0.8417077116091644
+"I have a JD Job Description
+
+ People Science. People Answers  !
+
+Do you love contributing to commercial growth and success? Join as a Presales Specialist! In this role, you’ll support the Presales function and commercial teams by building custom client demos, developing RFP responses, writing high quality Statements of Work, ensuring our deals are appropriately scoped and priced.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture. There is a huge investment in SHL currently so there ’ s no better time to become a part of something transformational. Hybrid working is available
+
+This role is based in the US. Candidates must be eligible to work in the US without sponsorship. SHL does not offer visa sponsorship.
+
+The Presales Specialist is responsible for creating, curating, and presenting compelling content to support the Solution Architects and Sales team during the presales phase. This includes:
+
+ Building custom demos 
+ Responding to RFPs 
+ Maintaining knowledge of SHL commercial offerings, pricing, and platforms. 
+ Scoping support for commercial opportunities 
+ Creating compelling proposals 
+ Presenting Solution Vision to Customers 
+ Ensuring successful handover from pre-sales to delivery teams 
+ Maintaining domain expertise in the Talent Intelligence and HCM space 
+
+Key Responsibilities
+
+ Content Creation and Customization: 
+
+ Develop customized content, including proposal (RFI/RFP) presentations, product demos and Word/Excel proposals, to support the presales process. 
+ Create engaging content that clearly communicates the value proposition of SHL’s solutions and services 
+ Collaborate with Solution Architects and sales teams to ensure content aligns with client requirements, business goals, strategy 
+
+ Collaboration with Sales and Technical (CoE) Teams: 
+
+ Work closely with Centre of Excellence to understand client technical requirements and submission planning. 
+ Professional Services: be an expert on what products and services we deliver. Ensure all aspects of client engagements can be delivered and set realistic timelines 
+ Product: Allowing a solid understanding of our solutions and stay appraised of digital roadmap and releases 
+
+Customer Engagement
+
+ Support sales teams getting ready for client meetings, demos, and presentations 
+ Help refine product positioning and messaging to resonate with the client’s industry and business context. 
+
+Content Strategy And Development
+
+ Develop and maintain a local library of reusable content, templates, and resources for presales presentations, proposals, and client demos. 
+ Continuously assess the effectiveness of content and iterate based on client feedback and sales outcomes. 
+ Stay up to date with industry trends, competitor content, and customer preferences to enhance content quality 
+
+ Required Skills and Qualifications: 
+
+ Qualification in Technology, Marketing, Communications, Business, or a related field 
+ Ideally 2-4 years of experience in a Presales or commercial operations preferably within a technology, SaaS or services industry. 
+ Strong writing, editing, and presentation skills with an ability to craft clear, persuasive, and engaging content. 
+ Experience with design tools (e.g., PowerPoint, Synthesia, Adobe, Canva). 
+ Strong communication and collaboration skills to work cross-functional teams. 
+ Ability to quickly understand customer needs and develop content that resonates with different audiences. 
+ Attention to detail and ability to manage multiple content development projects simultaneously. 
+ Utility player! You thrive in the unknown and enjoy wearing multiple hats 
+
+Desirable
+
+ Presales tools: Walnut, Custom Report Developer tools 
+ Marketing skills: Canva, Synthesia 
+ Contracting skills: Experience writing Statements of work 
+ Proposal skills: populating responses to RFPs, Loopio 
+ Technical skills: understanding of HR technology and workflows. Experience solutioning complex integrations. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable Talent Acquisition team. Choose a new path with SHL. 
+
+#PreSalesOperations #SHL #CareersAtSHL 
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Here and I have want them to give a test which is atleast  30 mins long",https://www.shl.com/products/assessments/behavioral-assessments/situation-judgement-tests-sjt/,0.8257064207282035
+"I have a JD Job Description
+
+ People Science. People Answers  !
+
+Do you love contributing to commercial growth and success? Join as a Presales Specialist! In this role, you’ll support the Presales function and commercial teams by building custom client demos, developing RFP responses, writing high quality Statements of Work, ensuring our deals are appropriately scoped and priced.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture. There is a huge investment in SHL currently so there ’ s no better time to become a part of something transformational. Hybrid working is available
+
+This role is based in the US. Candidates must be eligible to work in the US without sponsorship. SHL does not offer visa sponsorship.
+
+The Presales Specialist is responsible for creating, curating, and presenting compelling content to support the Solution Architects and Sales team during the presales phase. This includes:
+
+ Building custom demos 
+ Responding to RFPs 
+ Maintaining knowledge of SHL commercial offerings, pricing, and platforms. 
+ Scoping support for commercial opportunities 
+ Creating compelling proposals 
+ Presenting Solution Vision to Customers 
+ Ensuring successful handover from pre-sales to delivery teams 
+ Maintaining domain expertise in the Talent Intelligence and HCM space 
+
+Key Responsibilities
+
+ Content Creation and Customization: 
+
+ Develop customized content, including proposal (RFI/RFP) presentations, product demos and Word/Excel proposals, to support the presales process. 
+ Create engaging content that clearly communicates the value proposition of SHL’s solutions and services 
+ Collaborate with Solution Architects and sales teams to ensure content aligns with client requirements, business goals, strategy 
+
+ Collaboration with Sales and Technical (CoE) Teams: 
+
+ Work closely with Centre of Excellence to understand client technical requirements and submission planning. 
+ Professional Services: be an expert on what products and services we deliver. Ensure all aspects of client engagements can be delivered and set realistic timelines 
+ Product: Allowing a solid understanding of our solutions and stay appraised of digital roadmap and releases 
+
+Customer Engagement
+
+ Support sales teams getting ready for client meetings, demos, and presentations 
+ Help refine product positioning and messaging to resonate with the client’s industry and business context. 
+
+Content Strategy And Development
+
+ Develop and maintain a local library of reusable content, templates, and resources for presales presentations, proposals, and client demos. 
+ Continuously assess the effectiveness of content and iterate based on client feedback and sales outcomes. 
+ Stay up to date with industry trends, competitor content, and customer preferences to enhance content quality 
+
+ Required Skills and Qualifications: 
+
+ Qualification in Technology, Marketing, Communications, Business, or a related field 
+ Ideally 2-4 years of experience in a Presales or commercial operations preferably within a technology, SaaS or services industry. 
+ Strong writing, editing, and presentation skills with an ability to craft clear, persuasive, and engaging content. 
+ Experience with design tools (e.g., PowerPoint, Synthesia, Adobe, Canva). 
+ Strong communication and collaboration skills to work cross-functional teams. 
+ Ability to quickly understand customer needs and develop content that resonates with different audiences. 
+ Attention to detail and ability to manage multiple content development projects simultaneously. 
+ Utility player! You thrive in the unknown and enjoy wearing multiple hats 
+
+Desirable
+
+ Presales tools: Walnut, Custom Report Developer tools 
+ Marketing skills: Canva, Synthesia 
+ Contracting skills: Experience writing Statements of work 
+ Proposal skills: populating responses to RFPs, Loopio 
+ Technical skills: understanding of HR technology and workflows. Experience solutioning complex integrations. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable Talent Acquisition team. Choose a new path with SHL. 
+
+#PreSalesOperations #SHL #CareersAtSHL 
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.
+
+Here and I have want them to give a test which is atleast  30 mins long",https://www.shl.com/products/product-catalog/view/sales-and-service-phone-solution/,0.7857430036588666
+"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/sales-profiler-cards/,1.0
+"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/sales-transformation-report-sales-manager/,0.9320912458049034
+"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/sales-transformation-report-2-0-sales-manager/,0.9037837998264923
+"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/sales-interview-guide/,0.8709637085156047
+"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/retail-sales-and-service-simulation/,0.8672073824954337
+"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/java-8-new/,0.8626880952034472
+"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/,0.7884367241687075
+"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/sales-and-service-phone-solution/,0.7780551716492401
+"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/apprentice-8-0-job-focused-assessment-4261/,0.7722105655293369
+"I am new looking for new graduates in my sales team, suggest an 30 min long assessment",https://www.shl.com/products/product-catalog/view/sales-and-service-phone-simulation/,0.7443243778112762
+"For Marketing - Content Writer Position
+
+Department: Marketing
+
+Location: Gurugram
+
+About Company
+
+ShopClues.com is India's leading e-commerce platform that is focused on changing the shopping scenario of the country. We are the one-stop platform for everything from electronics to fashion to home & kitchen. The company visions to be the largest and most customer-centric e-commerce platform for India.
+
+ShopClues.com has been operating out of Silicon Valley since February 2011 and has its headquarters in Gurugram. The Company launched its Beta version on 26th January 2012 and has been constantly evolving since then for the better.
+
+Our Culture
+
+We are a team of enthusiastic and determined individuals, who believe in working together with lots of energy, bringing continuous innovations to the organization, and celebrating every bit of it. We provide equal opportunity to each individual and look forward to executing the best ideas.
+
+The Typical Creative Process Involves
+
+Discussing the campaign's core message and target audience
+Brainstorming visual and copy ideas with other members of the creative team
+Visualizing different forms of communication approaches for various marketing platforms like Website, Email, Social, etc. for ShopClues.
+Generating Stories for Brands core blog, and other content-driven platforms.
+Overseeing the production phase till the final output.
+Experience in the publishing of Push Notification and unique Product Description.",https://www.shl.com/products/product-catalog/view/marketing-new/,1.0
+"For Marketing - Content Writer Position
+
+Department: Marketing
+
+Location: Gurugram
+
+About Company
+
+ShopClues.com is India's leading e-commerce platform that is focused on changing the shopping scenario of the country. We are the one-stop platform for everything from electronics to fashion to home & kitchen. The company visions to be the largest and most customer-centric e-commerce platform for India.
+
+ShopClues.com has been operating out of Silicon Valley since February 2011 and has its headquarters in Gurugram. The Company launched its Beta version on 26th January 2012 and has been constantly evolving since then for the better.
+
+Our Culture
+
+We are a team of enthusiastic and determined individuals, who believe in working together with lots of energy, bringing continuous innovations to the organization, and celebrating every bit of it. We provide equal opportunity to each individual and look forward to executing the best ideas.
+
+The Typical Creative Process Involves
+
+Discussing the campaign's core message and target audience
+Brainstorming visual and copy ideas with other members of the creative team
+Visualizing different forms of communication approaches for various marketing platforms like Website, Email, Social, etc. for ShopClues.
+Generating Stories for Brands core blog, and other content-driven platforms.
+Overseeing the production phase till the final output.
+Experience in the publishing of Push Notification and unique Product Description.",https://www.shl.com/products/product-catalog/view/social-media-new/,0.9561900429030367
+"For Marketing - Content Writer Position
+
+Department: Marketing
+
+Location: Gurugram
+
+About Company
+
+ShopClues.com is India's leading e-commerce platform that is focused on changing the shopping scenario of the country. We are the one-stop platform for everything from electronics to fashion to home & kitchen. The company visions to be the largest and most customer-centric e-commerce platform for India.
+
+ShopClues.com has been operating out of Silicon Valley since February 2011 and has its headquarters in Gurugram. The Company launched its Beta version on 26th January 2012 and has been constantly evolving since then for the better.
+
+Our Culture
+
+We are a team of enthusiastic and determined individuals, who believe in working together with lots of energy, bringing continuous innovations to the organization, and celebrating every bit of it. We provide equal opportunity to each individual and look forward to executing the best ideas.
+
+The Typical Creative Process Involves
+
+Discussing the campaign's core message and target audience
+Brainstorming visual and copy ideas with other members of the creative team
+Visualizing different forms of communication approaches for various marketing platforms like Website, Email, Social, etc. for ShopClues.
+Generating Stories for Brands core blog, and other content-driven platforms.
+Overseeing the production phase till the final output.
+Experience in the publishing of Push Notification and unique Product Description.",https://www.shl.com/products/product-catalog/view/executive-scenarios/,0.8932768559612768
+"For Marketing - Content Writer Position
+
+Department: Marketing
+
+Location: Gurugram
+
+About Company
+
+ShopClues.com is India's leading e-commerce platform that is focused on changing the shopping scenario of the country. We are the one-stop platform for everything from electronics to fashion to home & kitchen. The company visions to be the largest and most customer-centric e-commerce platform for India.
+
+ShopClues.com has been operating out of Silicon Valley since February 2011 and has its headquarters in Gurugram. The Company launched its Beta version on 26th January 2012 and has been constantly evolving since then for the better.
+
+Our Culture
+
+We are a team of enthusiastic and determined individuals, who believe in working together with lots of energy, bringing continuous innovations to the organization, and celebrating every bit of it. We provide equal opportunity to each individual and look forward to executing the best ideas.
+
+The Typical Creative Process Involves
+
+Discussing the campaign's core message and target audience
+Brainstorming visual and copy ideas with other members of the creative team
+Visualizing different forms of communication approaches for various marketing platforms like Website, Email, Social, etc. for ShopClues.
+Generating Stories for Brands core blog, and other content-driven platforms.
+Overseeing the production phase till the final output.
+Experience in the publishing of Push Notification and unique Product Description.",https://www.shl.com/products/product-catalog/view/management-scenarios/,0.885033605405013
+"For Marketing - Content Writer Position
+
+Department: Marketing
+
+Location: Gurugram
+
+About Company
+
+ShopClues.com is India's leading e-commerce platform that is focused on changing the shopping scenario of the country. We are the one-stop platform for everything from electronics to fashion to home & kitchen. The company visions to be the largest and most customer-centric e-commerce platform for India.
+
+ShopClues.com has been operating out of Silicon Valley since February 2011 and has its headquarters in Gurugram. The Company launched its Beta version on 26th January 2012 and has been constantly evolving since then for the better.
+
+Our Culture
+
+We are a team of enthusiastic and determined individuals, who believe in working together with lots of energy, bringing continuous innovations to the organization, and celebrating every bit of it. We provide equal opportunity to each individual and look forward to executing the best ideas.
+
+The Typical Creative Process Involves
+
+Discussing the campaign's core message and target audience
+Brainstorming visual and copy ideas with other members of the creative team
+Visualizing different forms of communication approaches for various marketing platforms like Website, Email, Social, etc. for ShopClues.
+Generating Stories for Brands core blog, and other content-driven platforms.
+Overseeing the production phase till the final output.
+Experience in the publishing of Push Notification and unique Product Description.",https://www.shl.com/products/assessments/job-focused-assessments/,0.8801562448272043
+"For Marketing - Content Writer Position
+
+Department: Marketing
+
+Location: Gurugram
+
+About Company
+
+ShopClues.com is India's leading e-commerce platform that is focused on changing the shopping scenario of the country. We are the one-stop platform for everything from electronics to fashion to home & kitchen. The company visions to be the largest and most customer-centric e-commerce platform for India.
+
+ShopClues.com has been operating out of Silicon Valley since February 2011 and has its headquarters in Gurugram. The Company launched its Beta version on 26th January 2012 and has been constantly evolving since then for the better.
+
+Our Culture
+
+We are a team of enthusiastic and determined individuals, who believe in working together with lots of energy, bringing continuous innovations to the organization, and celebrating every bit of it. We provide equal opportunity to each individual and look forward to executing the best ideas.
+
+The Typical Creative Process Involves
+
+Discussing the campaign's core message and target audience
+Brainstorming visual and copy ideas with other members of the creative team
+Visualizing different forms of communication approaches for various marketing platforms like Website, Email, Social, etc. for ShopClues.
+Generating Stories for Brands core blog, and other content-driven platforms.
+Overseeing the production phase till the final output.
+Experience in the publishing of Push Notification and unique Product Description.",https://www.shl.com/products/product-catalog/view/executive-scenarios-profile-report/,0.8689720325417767
+"For Marketing - Content Writer Position
+
+Department: Marketing
+
+Location: Gurugram
+
+About Company
+
+ShopClues.com is India's leading e-commerce platform that is focused on changing the shopping scenario of the country. We are the one-stop platform for everything from electronics to fashion to home & kitchen. The company visions to be the largest and most customer-centric e-commerce platform for India.
+
+ShopClues.com has been operating out of Silicon Valley since February 2011 and has its headquarters in Gurugram. The Company launched its Beta version on 26th January 2012 and has been constantly evolving since then for the better.
+
+Our Culture
+
+We are a team of enthusiastic and determined individuals, who believe in working together with lots of energy, bringing continuous innovations to the organization, and celebrating every bit of it. We provide equal opportunity to each individual and look forward to executing the best ideas.
+
+The Typical Creative Process Involves
+
+Discussing the campaign's core message and target audience
+Brainstorming visual and copy ideas with other members of the creative team
+Visualizing different forms of communication approaches for various marketing platforms like Website, Email, Social, etc. for ShopClues.
+Generating Stories for Brands core blog, and other content-driven platforms.
+Overseeing the production phase till the final output.
+Experience in the publishing of Push Notification and unique Product Description.",https://www.shl.com/products/product-catalog/view/executive-scenarios-narrative-report/,0.8676949601984916
+"For Marketing - Content Writer Position
+
+Department: Marketing
+
+Location: Gurugram
+
+About Company
+
+ShopClues.com is India's leading e-commerce platform that is focused on changing the shopping scenario of the country. We are the one-stop platform for everything from electronics to fashion to home & kitchen. The company visions to be the largest and most customer-centric e-commerce platform for India.
+
+ShopClues.com has been operating out of Silicon Valley since February 2011 and has its headquarters in Gurugram. The Company launched its Beta version on 26th January 2012 and has been constantly evolving since then for the better.
+
+Our Culture
+
+We are a team of enthusiastic and determined individuals, who believe in working together with lots of energy, bringing continuous innovations to the organization, and celebrating every bit of it. We provide equal opportunity to each individual and look forward to executing the best ideas.
+
+The Typical Creative Process Involves
+
+Discussing the campaign's core message and target audience
+Brainstorming visual and copy ideas with other members of the creative team
+Visualizing different forms of communication approaches for various marketing platforms like Website, Email, Social, etc. for ShopClues.
+Generating Stories for Brands core blog, and other content-driven platforms.
+Overseeing the production phase till the final output.
+Experience in the publishing of Push Notification and unique Product Description.",https://www.shl.com/products/product-catalog/view/managerial-scenarios-candidate-report/,0.8553111415751945
+"For Marketing - Content Writer Position
+
+Department: Marketing
+
+Location: Gurugram
+
+About Company
+
+ShopClues.com is India's leading e-commerce platform that is focused on changing the shopping scenario of the country. We are the one-stop platform for everything from electronics to fashion to home & kitchen. The company visions to be the largest and most customer-centric e-commerce platform for India.
+
+ShopClues.com has been operating out of Silicon Valley since February 2011 and has its headquarters in Gurugram. The Company launched its Beta version on 26th January 2012 and has been constantly evolving since then for the better.
+
+Our Culture
+
+We are a team of enthusiastic and determined individuals, who believe in working together with lots of energy, bringing continuous innovations to the organization, and celebrating every bit of it. We provide equal opportunity to each individual and look forward to executing the best ideas.
+
+The Typical Creative Process Involves
+
+Discussing the campaign's core message and target audience
+Brainstorming visual and copy ideas with other members of the creative team
+Visualizing different forms of communication approaches for various marketing platforms like Website, Email, Social, etc. for ShopClues.
+Generating Stories for Brands core blog, and other content-driven platforms.
+Overseeing the production phase till the final output.
+Experience in the publishing of Push Notification and unique Product Description.",https://www.shl.com/products/product-catalog/view/managerial-scenarios-profile-report/,0.846910537284019
+"For Marketing - Content Writer Position
+
+Department: Marketing
+
+Location: Gurugram
+
+About Company
+
+ShopClues.com is India's leading e-commerce platform that is focused on changing the shopping scenario of the country. We are the one-stop platform for everything from electronics to fashion to home & kitchen. The company visions to be the largest and most customer-centric e-commerce platform for India.
+
+ShopClues.com has been operating out of Silicon Valley since February 2011 and has its headquarters in Gurugram. The Company launched its Beta version on 26th January 2012 and has been constantly evolving since then for the better.
+
+Our Culture
+
+We are a team of enthusiastic and determined individuals, who believe in working together with lots of energy, bringing continuous innovations to the organization, and celebrating every bit of it. We provide equal opportunity to each individual and look forward to executing the best ideas.
+
+The Typical Creative Process Involves
+
+Discussing the campaign's core message and target audience
+Brainstorming visual and copy ideas with other members of the creative team
+Visualizing different forms of communication approaches for various marketing platforms like Website, Email, Social, etc. for ShopClues.
+Generating Stories for Brands core blog, and other content-driven platforms.
+Overseeing the production phase till the final output.
+Experience in the publishing of Push Notification and unique Product Description.",https://www.shl.com/products/product-catalog/view/managerial-scenarios-narrative-report/,0.841853909920462
+"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/java-8-new/,1.0
+"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/java-2-platform-enterprise-edition-1-4-fundamental/,0.9006267640238164
+"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/360/,0.80839268757647
+"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/cardiology-and-diabetes-management-new/,0.7433081261213415
+"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/medical-terminology-new/,0.7400484506768864
+"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/net-framework-4-5/,0.7253549622082728
+"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/swing-new/,0.7181351775563372
+"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/prism-new/,0.7177803057289298
+"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/ms-word-new/,0.7143135826840564
+"I want to hire a product manager with 3-4 years of work experience and expertise in SDLC, Jira and Confluence",https://www.shl.com/products/product-catalog/view/occupational-personality-questionnaire-opq32r/,0.7013394352674295
+"Suggest me an assessment for the JD below Job Description
+
+ Find purpose in each day while contributing to a workplace revolution! SHL, People Science. People Answers. 
+
+Are you a driven business professional eager to develop your career by contributing directly to business success? SHL is seeking a Finance & Operations Analyst to join our AMS team!
+
+ The Finance & Operations Analyst  will provide insights, analysis, and guidance to commercial teams to drive informed outcomes. This role bridges the gap between finance & operations and the business, ensuring alignment with the organization’s strategic goals and delivering value-added advice to improve performance.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.  Hybrid working is available.
+
+What You Will Be Doing
+
+ Financial Reporting: Deliver accurate monthly management accounts, variance evaluation, and KPI insights to help data-driven decision-making. 
+ Budgeting & Forecasting: Assist in preparing budgets and forecasts, identifying financial risks, opportunities, and recommending strategic actions. 
+ Business Partnering: Act as the primary finance contact, collaborating with sales, marketing, and operations on pricing, investments, and business cases. 
+ Cost Management: Monitor and evaluate costs, ensuring budget alignment and identifying cost-saving opportunities without compromising service quality. 
+ Performance Insights: Track financial KPIs, providing actionable insights to enhance business performance and profitability. 
+ Process Improvement: Streamline financial processes, implement top practices, and guidance system enhancements for efficiency and accuracy. 
+ Ad-Hoc Analysis : Provide financial insights to assist business initiatives, projects, and outcomes. Assist senior finance team members with reporting, insight, and financial planning. 
+
+ What we are looking for from you: 
+
+ Experience in finance, accounting, business, or a related field. 
+ 1-2 years of experience in a financial, analytical, or commercial role. 
+ Experience in financial modeling, Excel, and accounting systems (e.g., SAP, Oracle, or similar). 
+ Knowledge of commercial operations and drivers of profitability. 
+ Strong analytical and critical thinking techniques with attention to detail. 
+ Excellent relationship-building and communication techniques, able to present financial data clearly to non-finance stakeholders. 
+ Proactive and self-motivated, with a collaborative approach to work. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent #HybridRole # salesoperationsjobs #financeanalystjobs #salesjobs
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.",https://www.shl.com/products/assessments/cognitive-assessments/,1.0
+"Suggest me an assessment for the JD below Job Description
+
+ Find purpose in each day while contributing to a workplace revolution! SHL, People Science. People Answers. 
+
+Are you a driven business professional eager to develop your career by contributing directly to business success? SHL is seeking a Finance & Operations Analyst to join our AMS team!
+
+ The Finance & Operations Analyst  will provide insights, analysis, and guidance to commercial teams to drive informed outcomes. This role bridges the gap between finance & operations and the business, ensuring alignment with the organization’s strategic goals and delivering value-added advice to improve performance.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.  Hybrid working is available.
+
+What You Will Be Doing
+
+ Financial Reporting: Deliver accurate monthly management accounts, variance evaluation, and KPI insights to help data-driven decision-making. 
+ Budgeting & Forecasting: Assist in preparing budgets and forecasts, identifying financial risks, opportunities, and recommending strategic actions. 
+ Business Partnering: Act as the primary finance contact, collaborating with sales, marketing, and operations on pricing, investments, and business cases. 
+ Cost Management: Monitor and evaluate costs, ensuring budget alignment and identifying cost-saving opportunities without compromising service quality. 
+ Performance Insights: Track financial KPIs, providing actionable insights to enhance business performance and profitability. 
+ Process Improvement: Streamline financial processes, implement top practices, and guidance system enhancements for efficiency and accuracy. 
+ Ad-Hoc Analysis : Provide financial insights to assist business initiatives, projects, and outcomes. Assist senior finance team members with reporting, insight, and financial planning. 
+
+ What we are looking for from you: 
+
+ Experience in finance, accounting, business, or a related field. 
+ 1-2 years of experience in a financial, analytical, or commercial role. 
+ Experience in financial modeling, Excel, and accounting systems (e.g., SAP, Oracle, or similar). 
+ Knowledge of commercial operations and drivers of profitability. 
+ Strong analytical and critical thinking techniques with attention to detail. 
+ Excellent relationship-building and communication techniques, able to present financial data clearly to non-finance stakeholders. 
+ Proactive and self-motivated, with a collaborative approach to work. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent #HybridRole # salesoperationsjobs #financeanalystjobs #salesjobs
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.",https://www.shl.com/products/product-catalog/view/financial-accounting-new/,0.9551899672745569
+"Suggest me an assessment for the JD below Job Description
+
+ Find purpose in each day while contributing to a workplace revolution! SHL, People Science. People Answers. 
+
+Are you a driven business professional eager to develop your career by contributing directly to business success? SHL is seeking a Finance & Operations Analyst to join our AMS team!
+
+ The Finance & Operations Analyst  will provide insights, analysis, and guidance to commercial teams to drive informed outcomes. This role bridges the gap between finance & operations and the business, ensuring alignment with the organization’s strategic goals and delivering value-added advice to improve performance.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.  Hybrid working is available.
+
+What You Will Be Doing
+
+ Financial Reporting: Deliver accurate monthly management accounts, variance evaluation, and KPI insights to help data-driven decision-making. 
+ Budgeting & Forecasting: Assist in preparing budgets and forecasts, identifying financial risks, opportunities, and recommending strategic actions. 
+ Business Partnering: Act as the primary finance contact, collaborating with sales, marketing, and operations on pricing, investments, and business cases. 
+ Cost Management: Monitor and evaluate costs, ensuring budget alignment and identifying cost-saving opportunities without compromising service quality. 
+ Performance Insights: Track financial KPIs, providing actionable insights to enhance business performance and profitability. 
+ Process Improvement: Streamline financial processes, implement top practices, and guidance system enhancements for efficiency and accuracy. 
+ Ad-Hoc Analysis : Provide financial insights to assist business initiatives, projects, and outcomes. Assist senior finance team members with reporting, insight, and financial planning. 
+
+ What we are looking for from you: 
+
+ Experience in finance, accounting, business, or a related field. 
+ 1-2 years of experience in a financial, analytical, or commercial role. 
+ Experience in financial modeling, Excel, and accounting systems (e.g., SAP, Oracle, or similar). 
+ Knowledge of commercial operations and drivers of profitability. 
+ Strong analytical and critical thinking techniques with attention to detail. 
+ Excellent relationship-building and communication techniques, able to present financial data clearly to non-finance stakeholders. 
+ Proactive and self-motivated, with a collaborative approach to work. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent #HybridRole # salesoperationsjobs #financeanalystjobs #salesjobs
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.",https://www.shl.com/products/assessments/personality-assessment/shl-motivation-questionnaire-mq/,0.9515440996896161
+"Suggest me an assessment for the JD below Job Description
+
+ Find purpose in each day while contributing to a workplace revolution! SHL, People Science. People Answers. 
+
+Are you a driven business professional eager to develop your career by contributing directly to business success? SHL is seeking a Finance & Operations Analyst to join our AMS team!
+
+ The Finance & Operations Analyst  will provide insights, analysis, and guidance to commercial teams to drive informed outcomes. This role bridges the gap between finance & operations and the business, ensuring alignment with the organization’s strategic goals and delivering value-added advice to improve performance.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.  Hybrid working is available.
+
+What You Will Be Doing
+
+ Financial Reporting: Deliver accurate monthly management accounts, variance evaluation, and KPI insights to help data-driven decision-making. 
+ Budgeting & Forecasting: Assist in preparing budgets and forecasts, identifying financial risks, opportunities, and recommending strategic actions. 
+ Business Partnering: Act as the primary finance contact, collaborating with sales, marketing, and operations on pricing, investments, and business cases. 
+ Cost Management: Monitor and evaluate costs, ensuring budget alignment and identifying cost-saving opportunities without compromising service quality. 
+ Performance Insights: Track financial KPIs, providing actionable insights to enhance business performance and profitability. 
+ Process Improvement: Streamline financial processes, implement top practices, and guidance system enhancements for efficiency and accuracy. 
+ Ad-Hoc Analysis : Provide financial insights to assist business initiatives, projects, and outcomes. Assist senior finance team members with reporting, insight, and financial planning. 
+
+ What we are looking for from you: 
+
+ Experience in finance, accounting, business, or a related field. 
+ 1-2 years of experience in a financial, analytical, or commercial role. 
+ Experience in financial modeling, Excel, and accounting systems (e.g., SAP, Oracle, or similar). 
+ Knowledge of commercial operations and drivers of profitability. 
+ Strong analytical and critical thinking techniques with attention to detail. 
+ Excellent relationship-building and communication techniques, able to present financial data clearly to non-finance stakeholders. 
+ Proactive and self-motivated, with a collaborative approach to work. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent #HybridRole # salesoperationsjobs #financeanalystjobs #salesjobs
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.",https://www.shl.com/products/product-catalog/view/software-business-analysis/,0.9172045933213986
+"Suggest me an assessment for the JD below Job Description
+
+ Find purpose in each day while contributing to a workplace revolution! SHL, People Science. People Answers. 
+
+Are you a driven business professional eager to develop your career by contributing directly to business success? SHL is seeking a Finance & Operations Analyst to join our AMS team!
+
+ The Finance & Operations Analyst  will provide insights, analysis, and guidance to commercial teams to drive informed outcomes. This role bridges the gap between finance & operations and the business, ensuring alignment with the organization’s strategic goals and delivering value-added advice to improve performance.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.  Hybrid working is available.
+
+What You Will Be Doing
+
+ Financial Reporting: Deliver accurate monthly management accounts, variance evaluation, and KPI insights to help data-driven decision-making. 
+ Budgeting & Forecasting: Assist in preparing budgets and forecasts, identifying financial risks, opportunities, and recommending strategic actions. 
+ Business Partnering: Act as the primary finance contact, collaborating with sales, marketing, and operations on pricing, investments, and business cases. 
+ Cost Management: Monitor and evaluate costs, ensuring budget alignment and identifying cost-saving opportunities without compromising service quality. 
+ Performance Insights: Track financial KPIs, providing actionable insights to enhance business performance and profitability. 
+ Process Improvement: Streamline financial processes, implement top practices, and guidance system enhancements for efficiency and accuracy. 
+ Ad-Hoc Analysis : Provide financial insights to assist business initiatives, projects, and outcomes. Assist senior finance team members with reporting, insight, and financial planning. 
+
+ What we are looking for from you: 
+
+ Experience in finance, accounting, business, or a related field. 
+ 1-2 years of experience in a financial, analytical, or commercial role. 
+ Experience in financial modeling, Excel, and accounting systems (e.g., SAP, Oracle, or similar). 
+ Knowledge of commercial operations and drivers of profitability. 
+ Strong analytical and critical thinking techniques with attention to detail. 
+ Excellent relationship-building and communication techniques, able to present financial data clearly to non-finance stakeholders. 
+ Proactive and self-motivated, with a collaborative approach to work. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent #HybridRole # salesoperationsjobs #financeanalystjobs #salesjobs
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.",https://www.shl.com/products/assessments/behavioral-assessments/situation-judgement-tests-sjt/,0.9044156917983531
+"Suggest me an assessment for the JD below Job Description
+
+ Find purpose in each day while contributing to a workplace revolution! SHL, People Science. People Answers. 
+
+Are you a driven business professional eager to develop your career by contributing directly to business success? SHL is seeking a Finance & Operations Analyst to join our AMS team!
+
+ The Finance & Operations Analyst  will provide insights, analysis, and guidance to commercial teams to drive informed outcomes. This role bridges the gap between finance & operations and the business, ensuring alignment with the organization’s strategic goals and delivering value-added advice to improve performance.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.  Hybrid working is available.
+
+What You Will Be Doing
+
+ Financial Reporting: Deliver accurate monthly management accounts, variance evaluation, and KPI insights to help data-driven decision-making. 
+ Budgeting & Forecasting: Assist in preparing budgets and forecasts, identifying financial risks, opportunities, and recommending strategic actions. 
+ Business Partnering: Act as the primary finance contact, collaborating with sales, marketing, and operations on pricing, investments, and business cases. 
+ Cost Management: Monitor and evaluate costs, ensuring budget alignment and identifying cost-saving opportunities without compromising service quality. 
+ Performance Insights: Track financial KPIs, providing actionable insights to enhance business performance and profitability. 
+ Process Improvement: Streamline financial processes, implement top practices, and guidance system enhancements for efficiency and accuracy. 
+ Ad-Hoc Analysis : Provide financial insights to assist business initiatives, projects, and outcomes. Assist senior finance team members with reporting, insight, and financial planning. 
+
+ What we are looking for from you: 
+
+ Experience in finance, accounting, business, or a related field. 
+ 1-2 years of experience in a financial, analytical, or commercial role. 
+ Experience in financial modeling, Excel, and accounting systems (e.g., SAP, Oracle, or similar). 
+ Knowledge of commercial operations and drivers of profitability. 
+ Strong analytical and critical thinking techniques with attention to detail. 
+ Excellent relationship-building and communication techniques, able to present financial data clearly to non-finance stakeholders. 
+ Proactive and self-motivated, with a collaborative approach to work. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent #HybridRole # salesoperationsjobs #financeanalystjobs #salesjobs
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.",https://www.shl.com/products/assessments/skills-and-simulations/business-skills/,0.8920233909182779
+"Suggest me an assessment for the JD below Job Description
+
+ Find purpose in each day while contributing to a workplace revolution! SHL, People Science. People Answers. 
+
+Are you a driven business professional eager to develop your career by contributing directly to business success? SHL is seeking a Finance & Operations Analyst to join our AMS team!
+
+ The Finance & Operations Analyst  will provide insights, analysis, and guidance to commercial teams to drive informed outcomes. This role bridges the gap between finance & operations and the business, ensuring alignment with the organization’s strategic goals and delivering value-added advice to improve performance.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.  Hybrid working is available.
+
+What You Will Be Doing
+
+ Financial Reporting: Deliver accurate monthly management accounts, variance evaluation, and KPI insights to help data-driven decision-making. 
+ Budgeting & Forecasting: Assist in preparing budgets and forecasts, identifying financial risks, opportunities, and recommending strategic actions. 
+ Business Partnering: Act as the primary finance contact, collaborating with sales, marketing, and operations on pricing, investments, and business cases. 
+ Cost Management: Monitor and evaluate costs, ensuring budget alignment and identifying cost-saving opportunities without compromising service quality. 
+ Performance Insights: Track financial KPIs, providing actionable insights to enhance business performance and profitability. 
+ Process Improvement: Streamline financial processes, implement top practices, and guidance system enhancements for efficiency and accuracy. 
+ Ad-Hoc Analysis : Provide financial insights to assist business initiatives, projects, and outcomes. Assist senior finance team members with reporting, insight, and financial planning. 
+
+ What we are looking for from you: 
+
+ Experience in finance, accounting, business, or a related field. 
+ 1-2 years of experience in a financial, analytical, or commercial role. 
+ Experience in financial modeling, Excel, and accounting systems (e.g., SAP, Oracle, or similar). 
+ Knowledge of commercial operations and drivers of profitability. 
+ Strong analytical and critical thinking techniques with attention to detail. 
+ Excellent relationship-building and communication techniques, able to present financial data clearly to non-finance stakeholders. 
+ Proactive and self-motivated, with a collaborative approach to work. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent #HybridRole # salesoperationsjobs #financeanalystjobs #salesjobs
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.",https://www.shl.com/products/assessments/job-focused-assessments/,0.8384710942138036
+"Suggest me an assessment for the JD below Job Description
+
+ Find purpose in each day while contributing to a workplace revolution! SHL, People Science. People Answers. 
+
+Are you a driven business professional eager to develop your career by contributing directly to business success? SHL is seeking a Finance & Operations Analyst to join our AMS team!
+
+ The Finance & Operations Analyst  will provide insights, analysis, and guidance to commercial teams to drive informed outcomes. This role bridges the gap between finance & operations and the business, ensuring alignment with the organization’s strategic goals and delivering value-added advice to improve performance.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.  Hybrid working is available.
+
+What You Will Be Doing
+
+ Financial Reporting: Deliver accurate monthly management accounts, variance evaluation, and KPI insights to help data-driven decision-making. 
+ Budgeting & Forecasting: Assist in preparing budgets and forecasts, identifying financial risks, opportunities, and recommending strategic actions. 
+ Business Partnering: Act as the primary finance contact, collaborating with sales, marketing, and operations on pricing, investments, and business cases. 
+ Cost Management: Monitor and evaluate costs, ensuring budget alignment and identifying cost-saving opportunities without compromising service quality. 
+ Performance Insights: Track financial KPIs, providing actionable insights to enhance business performance and profitability. 
+ Process Improvement: Streamline financial processes, implement top practices, and guidance system enhancements for efficiency and accuracy. 
+ Ad-Hoc Analysis : Provide financial insights to assist business initiatives, projects, and outcomes. Assist senior finance team members with reporting, insight, and financial planning. 
+
+ What we are looking for from you: 
+
+ Experience in finance, accounting, business, or a related field. 
+ 1-2 years of experience in a financial, analytical, or commercial role. 
+ Experience in financial modeling, Excel, and accounting systems (e.g., SAP, Oracle, or similar). 
+ Knowledge of commercial operations and drivers of profitability. 
+ Strong analytical and critical thinking techniques with attention to detail. 
+ Excellent relationship-building and communication techniques, able to present financial data clearly to non-finance stakeholders. 
+ Proactive and self-motivated, with a collaborative approach to work. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent #HybridRole # salesoperationsjobs #financeanalystjobs #salesjobs
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.",https://www.shl.com/products/assessments/assessment-and-development-centers/,0.805867943194463
+"Suggest me an assessment for the JD below Job Description
+
+ Find purpose in each day while contributing to a workplace revolution! SHL, People Science. People Answers. 
+
+Are you a driven business professional eager to develop your career by contributing directly to business success? SHL is seeking a Finance & Operations Analyst to join our AMS team!
+
+ The Finance & Operations Analyst  will provide insights, analysis, and guidance to commercial teams to drive informed outcomes. This role bridges the gap between finance & operations and the business, ensuring alignment with the organization’s strategic goals and delivering value-added advice to improve performance.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.  Hybrid working is available.
+
+What You Will Be Doing
+
+ Financial Reporting: Deliver accurate monthly management accounts, variance evaluation, and KPI insights to help data-driven decision-making. 
+ Budgeting & Forecasting: Assist in preparing budgets and forecasts, identifying financial risks, opportunities, and recommending strategic actions. 
+ Business Partnering: Act as the primary finance contact, collaborating with sales, marketing, and operations on pricing, investments, and business cases. 
+ Cost Management: Monitor and evaluate costs, ensuring budget alignment and identifying cost-saving opportunities without compromising service quality. 
+ Performance Insights: Track financial KPIs, providing actionable insights to enhance business performance and profitability. 
+ Process Improvement: Streamline financial processes, implement top practices, and guidance system enhancements for efficiency and accuracy. 
+ Ad-Hoc Analysis : Provide financial insights to assist business initiatives, projects, and outcomes. Assist senior finance team members with reporting, insight, and financial planning. 
+
+ What we are looking for from you: 
+
+ Experience in finance, accounting, business, or a related field. 
+ 1-2 years of experience in a financial, analytical, or commercial role. 
+ Experience in financial modeling, Excel, and accounting systems (e.g., SAP, Oracle, or similar). 
+ Knowledge of commercial operations and drivers of profitability. 
+ Strong analytical and critical thinking techniques with attention to detail. 
+ Excellent relationship-building and communication techniques, able to present financial data clearly to non-finance stakeholders. 
+ Proactive and self-motivated, with a collaborative approach to work. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent #HybridRole # salesoperationsjobs #financeanalystjobs #salesjobs
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.",https://www.shl.com/products/360/,0.7998094946965477
+"Suggest me an assessment for the JD below Job Description
+
+ Find purpose in each day while contributing to a workplace revolution! SHL, People Science. People Answers. 
+
+Are you a driven business professional eager to develop your career by contributing directly to business success? SHL is seeking a Finance & Operations Analyst to join our AMS team!
+
+ The Finance & Operations Analyst  will provide insights, analysis, and guidance to commercial teams to drive informed outcomes. This role bridges the gap between finance & operations and the business, ensuring alignment with the organization’s strategic goals and delivering value-added advice to improve performance.
+
+An excellent benefits package is offered in a culture where career development, with ongoing manager guidance, collaboration, flexibility, diversity and inclusivity are all intrinsic to our culture.  There is a huge investment in SHL currently so there’s no better time to become a part of something transformational.  Hybrid working is available.
+
+What You Will Be Doing
+
+ Financial Reporting: Deliver accurate monthly management accounts, variance evaluation, and KPI insights to help data-driven decision-making. 
+ Budgeting & Forecasting: Assist in preparing budgets and forecasts, identifying financial risks, opportunities, and recommending strategic actions. 
+ Business Partnering: Act as the primary finance contact, collaborating with sales, marketing, and operations on pricing, investments, and business cases. 
+ Cost Management: Monitor and evaluate costs, ensuring budget alignment and identifying cost-saving opportunities without compromising service quality. 
+ Performance Insights: Track financial KPIs, providing actionable insights to enhance business performance and profitability. 
+ Process Improvement: Streamline financial processes, implement top practices, and guidance system enhancements for efficiency and accuracy. 
+ Ad-Hoc Analysis : Provide financial insights to assist business initiatives, projects, and outcomes. Assist senior finance team members with reporting, insight, and financial planning. 
+
+ What we are looking for from you: 
+
+ Experience in finance, accounting, business, or a related field. 
+ 1-2 years of experience in a financial, analytical, or commercial role. 
+ Experience in financial modeling, Excel, and accounting systems (e.g., SAP, Oracle, or similar). 
+ Knowledge of commercial operations and drivers of profitability. 
+ Strong analytical and critical thinking techniques with attention to detail. 
+ Excellent relationship-building and communication techniques, able to present financial data clearly to non-finance stakeholders. 
+ Proactive and self-motivated, with a collaborative approach to work. 
+
+Get In Touch
+
+Find out how this one-off opportunity can help you to achieve your career goals by making an application to our knowledgeable and friendly Talent Acquisition team. Choose a new path with SHL.
+
+ #CareersAtSHL #SHLHiringTalent #HybridRole # salesoperationsjobs #financeanalystjobs #salesjobs
+
+About Us
+
+We unlock the possibilities of businesses through the power of people, science and technology.
+We started this industry of people insight more than 40 years ago and continue to lead the market with powerhouse product launches, ground-breaking science and business transformation.
+When you inspire and transform people’s lives, you will experience the greatest business outcomes possible. SHL’s products insights, experiences, and services can help achieve growth at scale.
+
+What SHL Can Offer You
+
+Diversity, equity, inclusion and accessibility are key threads in the fabric of SHL’s business and culture (find out more about DEI and accessibility at SHL )
+
+Employee benefits package that takes care of you and your family.
+Support, coaching, and on-the-job development to achieve career success
+A fun and flexible workplace where you’ll be inspired to do your best work (find out more LifeAtSHL )
+The ability to transform workplaces around the world for others.
+
+SHL is an equal opportunity employer. We support and encourage applications from a diverse range of candidates. We can, and do make adjustments to make sure our recruitment process is as inclusive as possible.",https://www.shl.com/products/product-catalog/view/bookkeeping-accounting-auditing-clerk-short-form/,0.7826111149383189
 "I want to hire Customer support executives who are expert in English communication.  
 We are looking for talented Customer Support specialists to join our Product operations team in India (Mumbai)
 
@@ -74,7 +2344,7 @@ Our global benefits
 Private health insurance
 Subscription allowance
 Find more information about our benefits here
-Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/customer-service-phone-simulation/,0.4
+Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/customer-service-phone-simulation/,1.0
 "I want to hire Customer support executives who are expert in English communication.  
 We are looking for talented Customer Support specialists to join our Product operations team in India (Mumbai)
 
@@ -120,7 +2390,7 @@ Our global benefits
 Private health insurance
 Subscription allowance
 Find more information about our benefits here
-Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/entry-level-customer-service-general-solution/,0.3559304347163941
+Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/entry-level-customer-service-general-solution/,0.8895097019899284
 "I want to hire Customer support executives who are expert in English communication.  
 We are looking for talented Customer Support specialists to join our Product operations team in India (Mumbai)
 
@@ -166,7 +2436,7 @@ Our global benefits
 Private health insurance
 Subscription allowance
 Find more information about our benefits here
-Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/retail-sales-and-service-simulation/,0.34874379300765923
+Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/retail-sales-and-service-simulation/,0.8670920648827479
 "I want to hire Customer support executives who are expert in English communication.  
 We are looking for talented Customer Support specialists to join our Product operations team in India (Mumbai)
 
@@ -212,7 +2482,7 @@ Our global benefits
 Private health insurance
 Subscription allowance
 Find more information about our benefits here
-Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/assessments/job-focused-assessments/,0.3463932939384671
+Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/assessments/job-focused-assessments/,0.8602176164399197
 "I want to hire Customer support executives who are expert in English communication.  
 We are looking for talented Customer Support specialists to join our Product operations team in India (Mumbai)
 
@@ -258,7 +2528,7 @@ Our global benefits
 Private health insurance
 Subscription allowance
 Find more information about our benefits here
-Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/customer-service-phone-solution/,0.3383201735766394
+Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/sales-and-service-phone-solution/,0.844471076056172
 "I want to hire Customer support executives who are expert in English communication.  
 We are looking for talented Customer Support specialists to join our Product operations team in India (Mumbai)
 
@@ -304,7 +2574,7 @@ Our global benefits
 Private health insurance
 Subscription allowance
 Find more information about our benefits here
-Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/sales-and-service-phone-solution/,0.3377542879473427
+Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/customer-service-phone-solution/,0.8440021325780515
 "I want to hire Customer support executives who are expert in English communication.  
 We are looking for talented Customer Support specialists to join our Product operations team in India (Mumbai)
 
@@ -350,7 +2620,7 @@ Our global benefits
 Private health insurance
 Subscription allowance
 Find more information about our benefits here
-Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/entry-level-customer-serv-retail-and-contact-center/,0.3353179429207666
+Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/entry-level-customer-serv-retail-and-contact-center/,0.8384172375913305
 "I want to hire Customer support executives who are expert in English communication.  
 We are looking for talented Customer Support specialists to join our Product operations team in India (Mumbai)
 
@@ -396,7 +2666,7 @@ Our global benefits
 Private health insurance
 Subscription allowance
 Find more information about our benefits here
-Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/sales-and-service-phone-simulation/,0.31538142775284955
+Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/sales-and-service-phone-simulation/,0.7883779474524724
 "I want to hire Customer support executives who are expert in English communication.  
 We are looking for talented Customer Support specialists to join our Product operations team in India (Mumbai)
 
@@ -442,7 +2712,7 @@ Our global benefits
 Private health insurance
 Subscription allowance
 Find more information about our benefits here
-Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/assessments/cognitive-assessments/,0.3141044438103016
+Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/assessments/cognitive-assessments/,0.7818143780535176
 "I want to hire Customer support executives who are expert in English communication.  
 We are looking for talented Customer Support specialists to join our Product operations team in India (Mumbai)
 
@@ -488,4 +2758,4 @@ Our global benefits
 Private health insurance
 Subscription allowance
 Find more information about our benefits here
-Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/conversational-multichat-simulation/,0.30780625764076985
+Minna is an equal opportunities employer and does not discriminate on the basis of race, nationality, ethnicity, skin colour, religion, disability or sexual orientation. We celebrate and embrace a diverse workforce and are committed to building a team that represents a variety of backgrounds, perspectives and skills.",https://www.shl.com/products/product-catalog/view/conversational-multichat-simulation/,0.770288435475267

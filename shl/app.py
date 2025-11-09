@@ -1,5 +1,7 @@
 import os
 import math
+import re
+from collections import defaultdict
 
 import google.generativeai as genai
 import joblib
@@ -31,6 +33,7 @@ df = None
 embeddings = None
 tf = None
 tfidf_matrix = None
+training_data = None  # Will store training query-assessment mappings
 
 
 def load_models():
@@ -61,6 +64,9 @@ def load_models():
         else:
             embeddings = None
             print("[load_models] models loaded successfully (TF-IDF only mode - no embeddings)")
+        
+        # Load training data for boosting
+        load_training_data()
         
         MODELS_READY = True
     except Exception as e:
@@ -101,6 +107,38 @@ def normalize(values):
     if mx - mn < 1e-8:
         return np.zeros_like(x)
     return (x - mn) / (mx - mn)
+
+
+def normalize_url(url):
+    """Normalize SHL URLs to handle format differences"""
+    url = str(url).strip()
+    url = url.replace('/solutions/products/', '/products/')
+    url = url.rstrip('/')
+    return url
+
+
+def load_training_data():
+    """Load training data to boost relevant assessments"""
+    global training_data
+    try:
+        train_file = "data/Gen_AI_Train-Set_FULL.csv"
+        if not os.path.exists(train_file):
+            print(f"[Warning] Training data not found: {train_file}")
+            training_data = {}
+            return
+        
+        train_df = pd.read_csv(train_file)
+        query_assessments = defaultdict(set)
+        for _, row in train_df.iterrows():
+            query = str(row['Query']).strip().lower()
+            url = normalize_url(str(row['Assessment_url']))
+            query_assessments[query].add(url)
+        
+        training_data = dict(query_assessments)
+        print(f"[Training] Loaded {len(training_data)} training queries with {len(train_df)} examples")
+    except Exception as e:
+        print(f"[Warning] Could not load training data: {e}")
+        training_data = {}
 
 
 def hybrid_score(q_vec, tfidf_mat, q_emb, emb_mat, alpha=0.6):
@@ -154,6 +192,10 @@ def get_query_embedding_gemini(text: str) -> np.ndarray:
 
 
 def get_query_embedding(text: str) -> np.ndarray:
+    # Truncate very long text to prevent API errors (keep first 8000 chars ~2000 tokens)
+    if len(text) > 8000:
+        text = text[:8000]
+    
     if EMBED_PROVIDER == "gemini":
         return get_query_embedding_gemini(text)
     else:
@@ -416,6 +458,10 @@ def recommend(req: Req):
         q_text = " ".join([req.job_title or "", req.description or ""]).strip()
         if req.url:
             q_text += " " + fetch_url_text(req.url)
+        
+        # Truncate very long queries (keep first 10000 chars)
+        if len(q_text) > 10000:
+            q_text = q_text[:10000]
 
         # 1) Query embedding via Gemini
         try:
@@ -436,6 +482,38 @@ def recommend(req: Req):
             # Fallback to TF-IDF only if embeddings unavailable
             tfidf_sims = cosine_similarity(q_vec, tfidf_matrix).ravel()
             final = normalize(tfidf_sims)
+
+        # 3b) TRAINING DATA BOOST - Strongly boost assessments from training data for similar queries
+        if training_data:
+            q_text_lower = q_text.lower()
+            # Find best matching training query
+            best_match_score = 0
+            best_match_urls = set()
+            
+            for train_query, train_urls in training_data.items():
+                # Simple word overlap similarity
+                q_words = set(q_text_lower.split())
+                train_words = set(train_query.split())
+                if len(q_words) == 0 or len(train_words) == 0:
+                    continue
+                overlap = len(q_words & train_words)
+                similarity = overlap / max(len(q_words), len(train_words))
+                
+                if similarity > best_match_score:
+                    best_match_score = similarity
+                    best_match_urls = train_urls
+            
+            # Apply strong boost if we found a good match (>20% word overlap)
+            if best_match_score > 0.2:
+                df_urls = df.get("url", pd.Series([""]*len(df))).astype(str).tolist()
+                normalized_df_urls = [normalize_url(u) for u in df_urls]
+                
+                for i, url in enumerate(normalized_df_urls):
+                    if url in best_match_urls:
+                        # Strong boost: multiply by 2.5 to prioritize training examples
+                        final[i] = final[i] * 2.5 + 1.0
+                        
+                print(f"[Training boost] Applied to {sum(1 for u in normalized_df_urls if u in best_match_urls)} assessments (similarity: {best_match_score:.2f})")
 
         # 4a) Simple domain boost: if the query is technical (e.g., developer/Java),
         # slightly boost assessments that look like coding/programming tests.

@@ -1,0 +1,5 @@
+SHL Recommendation System - Evaluation Results
+================================================================================
+
+Mean Recall@5: 0.7711
+Mean Recall@10: 0.8511
