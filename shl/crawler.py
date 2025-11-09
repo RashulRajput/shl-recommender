@@ -1,145 +1,120 @@
+# shl/crawler.py
 """
-Crawl SHL product catalog and extract "Individual Test Solutions".
-Outputs: data/assessments.csv
+Full SHL Product Catalog Crawler
+Scrapes all 'Individual Test Solutions' except 'Pre-packaged Job Solutions'
+Outputs: shl/data/assessments.csv (or custom path via --output)
+Usage: python crawler.py [--output PATH] [--pages N]
 """
 
-import argparse
-import os
-import re
-import time
+import requests, re, csv, os, time, argparse
+from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
-import pandas as pd
-import requests
-from bs4 import BeautifulSoup
+BASE = "https://www.shl.com"
+CATALOG_URL = "https://www.shl.com/products/product-catalog/"
+OUT = os.path.join(os.path.dirname(__file__), "data", "assessments.csv")
 
-BASE = "https://www.shl.com/products/product-catalog/"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; SHL-Recommender/1.0)"}
-os.makedirs("data", exist_ok=True)
+THROTTLE = 0.7  # seconds between requests
+MAX_PAGES = 32  # 32 pages per SHL catalog
 
 
-def fetch(url, timeout=15):
-	try:
-		r = requests.get(url, headers=HEADERS, timeout=timeout)
-		r.raise_for_status()
-		return r.text
-	except Exception as exc:  # network errors should not crash crawl
-		print(f"[fetch] {exc}")
-		return ""
+def get_soup(url):
+    r = requests.get(url, headers=HEADERS, timeout=20)
+    r.raise_for_status()
+    return BeautifulSoup(r.text, "html.parser")
 
+def extract_links_from_page(page_url):
+    soup = get_soup(page_url)
+    links = []
+    for a in soup.select("a[href*='/products/']"):
+        href = a["href"]
+        if "/products/" in href and "pre-packaged-job-solutions" not in href.lower():
+            links.append(urljoin(BASE, href.split("?")[0]))
+    return list(set(links))
 
-def find_individual_section(soup):
-	for htag in ("h1", "h2", "h3", "h4", "h5"):
-		for heading in soup.find_all(htag):
-			text = heading.get_text(separator=" ", strip=True).lower()
-			if "individual test" in text:
-				return heading
-	return None
+def extract_product_details(url):
+    soup = get_soup(url)
+    title = soup.find("h1").get_text(strip=True) if soup.find("h1") else ""
+    text = " ".join([p.get_text(" ", strip=True) for p in soup.find_all("p")])
+    text = re.sub(r"\s+", " ", text)
+    
+    # Skip invalid pages: empty title, category pages, pre-packaged solutions
+    if not title or len(title) < 3:
+        return None
+    if "pre-packaged" in title.lower() or "job solution" in title.lower():
+        return None
+    # Skip category/overview pages (too generic URLs)
+    if url.endswith("/assessments/") or url.endswith("/products/"):
+        return None
+    
+    return {
+        "title": title,
+        "url": url,
+        "raw_text": text,
+        "test_type": detect_type(title + " " + text),
+        "text": text,
+    }
 
+def detect_type(text):
+    t = text.lower()
+    if re.search(r"coding|developer|programming|sql|java|python|technical", t):
+        return "technical"
+    elif re.search(r"personality|behavior|behaviour|motivation|communication", t):
+        return "behavioural"
+    elif re.search(r"reasoning|cognitive|verbal|numerical|aptitude", t):
+        return "cognitive"
+    elif re.search(r"simulation|call center|sales|customer", t):
+        return "simulation"
+    else:
+        return "general"
 
-def parse_catalog_page(html):
-	soup = BeautifulSoup(html, "html.parser")
-	heading = find_individual_section(soup)
-	items = []
+def crawl_all():
+    all_links = []
+    for i in range(0, MAX_PAGES * 12, 12):
+        url = f"{CATALOG_URL}?start={i}&type=1"
+        print(f"[+] Scanning: {url}")
+        try:
+            links = extract_links_from_page(url)
+            all_links.extend(links)
+        except Exception as e:
+            print(f"Failed page {i}: {e}")
+        time.sleep(THROTTLE)
+    all_links = list(set(all_links))
+    print(f"Total unique product links: {len(all_links)}")
 
-	if heading:
-		for sibling in heading.find_all_next():
-			if sibling.name in ("h1", "h2"):
-				break
-			for anchor in sibling.find_all("a", href=True):
-				title = anchor.get_text(strip=True)
-				href = urljoin(BASE, anchor["href"])
-				if title and "/products/" in href and "pre-packaged" not in title.lower():
-					items.append((title, href))
+    results = []
+    for idx, link in enumerate(all_links, 1):
+        try:
+            data = extract_product_details(link)
+            if data:
+                results.append(data)
+                print(f"[{idx}/{len(all_links)}] Added: {data['title'][:60]}")
+        except Exception as e:
+            print(f"Failed product: {link} -> {e}")
+        time.sleep(THROTTLE)
+    return results
 
-	if not items:
-		for anchor in soup.find_all("a", href=True):
-			title = anchor.get_text(strip=True)
-			href = urljoin(BASE, anchor["href"])
-			if title and "/products/" in href and "pre-packaged" not in title.lower():
-				items.append((title, href))
-
-	unique, output = set(), []
-	for title, href in items:
-		if href not in unique:
-			unique.add(href)
-			output.append({"title": title, "url": href})
-	return output
-
-
-def extract_product_page(url):
-	html = fetch(url)
-	if not html:
-		return {"test_type": None, "raw_text": "", "skip": False}
-
-	soup = BeautifulSoup(html, "html.parser")
-	text = soup.get_text(separator=" ", strip=True)
-
-	# Exclude pre-packaged solutions robustly
-	lowered = text.lower()
-	if "pre-packaged" in lowered or "pre packaged" in lowered:
-		return {"test_type": None, "raw_text": "", "skip": True}
-
-	match = re.search(r"Test\s*Type[:\s]*([A-Z, ]{1,6})", text, re.I)
-	test_type = match.group(1).strip() if match else None
-	return {"test_type": test_type, "raw_text": text, "skip": False}
-
-
-def crawl_catalog(max_pages=25, throttle=0.5):
-	html = fetch(BASE)
-	items = parse_catalog_page(html)
-
-	for page in range(2, max_pages + 1):
-		page_url = f"{BASE}?page={page}"
-		html_page = fetch(page_url)
-		if not html_page:
-			break
-
-		more_items = parse_catalog_page(html_page)
-		if not more_items:
-			break
-
-		items.extend(more_items)
-		time.sleep(throttle)
-
-	df = pd.DataFrame(items).drop_duplicates(subset=["url"])
-	print(f"Found {len(df)} product URLs")
-	return df
-
-
-def enrich_and_save(df, throttle=0.4):
-	records = []
-
-	for idx, row in df.iterrows():
-		print(f"[{idx + 1}/{len(df)}] {row['title']}")
-		meta = extract_product_page(row["url"])
-
-		if meta.get("skip", False):
-			print("  -> Skipping (pre-packaged)")
-			continue
-
-		records.append(
-			{
-				"title": row["title"],
-				"url": row["url"],
-				"test_type": meta["test_type"],
-				"raw_text": meta["raw_text"],
-			}
-		)
-		time.sleep(throttle)
-
-	output_df = pd.DataFrame(records)
-	output_df.to_csv("data/assessments.csv", index=False)
-	print("Saved data/assessments.csv")
-	return output_df
-
+def write_csv(rows, output_path=None):
+    out_file = output_path or OUT
+    os.makedirs(os.path.dirname(out_file), exist_ok=True)
+    with open(out_file, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=["title", "url", "test_type", "raw_text", "text"])
+        writer.writeheader()
+        for r in rows:
+            writer.writerow(r)
+    print(f"\n✅ Saved {len(rows)} assessments to {out_file}")
 
 if __name__ == "__main__":
-	parser = argparse.ArgumentParser(description="Crawl SHL catalog")
-	parser.add_argument("--max-pages", type=int, default=25, help="Number of catalog pages to crawl")
-	parser.add_argument("--throttle", type=float, default=0.5, help="Seconds to sleep between requests")
-	arguments = parser.parse_args()
-
-	dataframe = crawl_catalog(max_pages=arguments.max_pages, throttle=arguments.throttle)
-	if not dataframe.empty:
-		enrich_and_save(dataframe, throttle=arguments.throttle)
+    parser = argparse.ArgumentParser(description="Crawl SHL product catalog")
+    parser.add_argument("--output", "-o", help="Output CSV path (default: shl/data/assessments.csv)")
+    parser.add_argument("--pages", "-p", type=int, help=f"Max pages to crawl (default: {MAX_PAGES})")
+    args = parser.parse_args()
+    
+    # Override globals if specified
+    if args.pages:
+        MAX_PAGES = args.pages
+        print(f"Crawling {MAX_PAGES} pages...")
+    
+    data = crawl_all()
+    write_csv(data, args.output)

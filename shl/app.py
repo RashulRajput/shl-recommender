@@ -1,4 +1,5 @@
 import os
+import math
 
 import google.generativeai as genai
 import joblib
@@ -39,9 +40,9 @@ def load_models():
     global MODELS_READY, df, embeddings, tf, tfidf_matrix
     try:
         required = [
-            "shl/models/assessments_df.pkl",
-            "shl/models/tfidf.pkl",
-            "shl/models/tfidf_matrix.pkl",
+            "models/assessments_df.pkl",
+            "models/tfidf.pkl",
+            "models/tfidf_matrix.pkl",
         ]
         for p in required:
             if not os.path.exists(p):
@@ -49,13 +50,13 @@ def load_models():
                 print(f"[load_models] missing: {p}")
                 return
 
-        df = joblib.load("shl/models/assessments_df.pkl")
-        tf = joblib.load("shl/models/tfidf.pkl")
-        tfidf_matrix = joblib.load("shl/models/tfidf_matrix.pkl")
+        df = joblib.load("models/assessments_df.pkl")
+        tf = joblib.load("models/tfidf.pkl")
+        tfidf_matrix = joblib.load("models/tfidf_matrix.pkl")
         
         # embeddings are optional - load if available
-        if os.path.exists("shl/models/embeddings.npy"):
-            embeddings = np.load("shl/models/embeddings.npy")
+        if os.path.exists("models/embeddings.npy"):
+            embeddings = np.load("models/embeddings.npy")
             print("[load_models] models loaded successfully with embeddings")
         else:
             embeddings = None
@@ -92,8 +93,53 @@ def fetch_url_text(url: str) -> str:
 
 
 def normalize(values):
-    array = np.array(values, dtype=float)
-    return (array - array.min()) / (array.max() - array.min() + 1e-9)
+    """Normalize array to 0..1 range."""
+    x = np.asarray(values, dtype=float)
+    if x.size == 0:
+        return x
+    mn, mx = x.min(), x.max()
+    if mx - mn < 1e-8:
+        return np.zeros_like(x)
+    return (x - mn) / (mx - mn)
+
+
+def hybrid_score(q_vec, tfidf_mat, q_emb, emb_mat, alpha=0.6):
+    """
+    Optimized hybrid scoring combining lexical (TF-IDF) and semantic (embeddings).
+    
+    Args:
+        q_vec: Query TF-IDF vector (sparse or dense, shape (1, m))
+        tfidf_mat: Document TF-IDF matrix (n x m)
+        q_emb: Query embedding vector (d,) 
+        emb_mat: Document embedding matrix (n x d)
+        alpha: Weight for embeddings (0..1, default 0.6 = embedding-heavy)
+    
+    Returns:
+        Combined scores (n,) normalized to 0..1
+    """
+    # Lexical similarity (cosine on TF-IDF)
+    lex = cosine_similarity(q_vec, tfidf_mat).ravel()  # (n,)
+    
+    # Semantic similarity (direct dot product - faster than cosine for normalized embeddings)
+    sem = np.dot(emb_mat, q_emb)  # (n,)
+    
+    # Normalize both to 0..1 range
+    lex_n = normalize(lex)
+    sem_n = normalize(sem)
+    
+    # Weighted combination
+    return alpha * sem_n + (1.0 - alpha) * lex_n
+
+
+def combine_scores(tfidf_scores, emb_scores, alpha=0.6):
+    """
+    Legacy wrapper for hybrid_score. Kept for compatibility.
+    Combine TF-IDF and embedding scores with configurable weighting.
+    alpha: weight for embeddings (default 0.6 = embedding-heavy)
+    """
+    lex_n = normalize(tfidf_scores)
+    sem_n = normalize(emb_scores)
+    return alpha * sem_n + (1.0 - alpha) * lex_n
 
 
 def get_query_embedding_gemini(text: str) -> np.ndarray:
@@ -379,26 +425,44 @@ def recommend(req: Req):
             print("[recommend] embedding API failed:", str(e))
             q_emb = None
 
-        # 2) Semantic similarity (if q_emb present and embeddings loaded)
-        if q_emb is not None and embeddings is not None:
-            sem = cosine_similarity(q_emb.reshape(1, -1), embeddings)[0]
-            sem_n = normalize(sem)
-        else:
-            sem_n = np.zeros(len(df))
-
-        # 3) TF-IDF similarity
+        # 2) TF-IDF vector
         q_vec = tf.transform([q_text])
-        tfidf_sims = cosine_similarity(q_vec, tfidf_matrix)[0]
-        tf_n = normalize(tfidf_sims)
 
-        # 4) Combine hybrid score
-        # adjust weights as needed
-        final = 0.65 * sem_n + 0.35 * tf_n
+        # 3) Compute hybrid score using optimized function
+        if q_emb is not None and embeddings is not None:
+            # Use optimized hybrid_score with direct dot product for embeddings
+            final = hybrid_score(q_vec, tfidf_matrix, q_emb, embeddings, alpha=0.6)
+        else:
+            # Fallback to TF-IDF only if embeddings unavailable
+            tfidf_sims = cosine_similarity(q_vec, tfidf_matrix).ravel()
+            final = normalize(tfidf_sims)
+
+        # 4a) Simple domain boost: if the query is technical (e.g., developer/Java),
+        # slightly boost assessments that look like coding/programming tests.
+        txt_low = q_text.lower()
+        tech_hint_tokens = [
+            "developer","engineer","software","coding","programming","programmer",
+            "java","spring","hibernate","microservices","oop","data structure","algorithm"
+        ]
+        has_tech_hint = any(t in txt_low for t in tech_hint_tokens)
+
+        if has_tech_hint:
+            # Heuristics to detect coding assessments from title or raw text
+            boost_keywords = [
+                "coding","code","program","developer","software","java","spring","algorithm",
+                "data structure","microservice","oop"
+            ]
+            titles = df.get("title", pd.Series([""]*len(df))).astype(str).str.lower().tolist()
+            texts = df.get("raw_text", pd.Series([""]*len(df))).astype(str).str.lower().tolist()
+            for i in range(len(final)):
+                t = titles[i]
+                x = texts[i] if i < len(texts) else ""
+                if any(k in t or k in x for k in boost_keywords):
+                    final[i] += 0.08  # small, stable boost to prioritize coding-relevant items
 
         # 5) Balance K (Knowledge) and P (Personality) if both domains present
         tech_tokens = ["python","java","sql","javascript","react","node","c++","c#","docker","kubernetes","coding","technical","software","engineer","qa","selenium"]
         beh_tokens = ["collaborat","team","stakehold","communication","personality","behaviour","behavior","leadership","culture","interpersonal"]
-        txt_low = q_text.lower()
         has_tech = any(t in txt_low for t in tech_tokens)
         has_beh = any(t in txt_low for t in beh_tokens)
 
@@ -407,7 +471,8 @@ def recommend(req: Req):
 
         selected_idx = []
         if has_tech and has_beh and top_k >= 2:
-            need_k = max(1, top_k // 2)
+            # Bias slightly toward technical items when both aspects are present
+            need_k = max(2, math.ceil(top_k * 0.6))
             need_p = max(1, top_k - need_k)
             k_added = 0
             p_added = 0

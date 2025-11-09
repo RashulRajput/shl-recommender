@@ -11,6 +11,17 @@ from embed_gemini_only import make_embeddings
 
 os.makedirs("models", exist_ok=True)
 
+# if Gen_AI train/test files exist, load and append mappings if necessary
+def merge_mapping(path):
+	if os.path.exists(path):
+		mdf = pd.read_csv(path)
+		# expect columns Query, Assessment_url or similar - normalize
+		if 'Assessment_url' in mdf.columns or 'assessment_url' in mdf.columns:
+			# optionally use for downstream eval only
+			print(f"Loaded mapping {path} ({len(mdf)})")
+		else:
+			print(f"Loaded unlabelled mapping {path}")
+
 def join_text(row: pd.Series) -> str:
 	return " ".join(str(row.get(col, "")) for col in ["title", "raw_text", "test_type"])
 
@@ -37,12 +48,18 @@ def build():
 		df = pd.read_csv("data/assessments.csv")
 		if df.empty:
 			raise RuntimeError("data/assessments.csv is empty; run crawler first")
-		# Keep only actual assessments
-		df = df[df["test_type"].notnull()].copy()
+		# keep all products — fill missing test_type with 'general'
+		df['test_type'] = df['test_type'].fillna('general')
 		print(f"Loaded {len(df)} assessments with test_type from catalog")
 		if df.empty:
 			raise RuntimeError("No valid assessments found with test_type; check crawler output")
 		df["text"] = df.apply(join_text, axis=1)
+		
+		# Load train/test mappings if they exist
+		train_map_path = os.path.join("data", "Gen_AI_Train-Set_FULL.csv")
+		test_map_path = os.path.join("data", "Gen_AI_Test-Set_FULL.csv")
+		merge_mapping(train_map_path)
+		merge_mapping(test_map_path)
 
 	api_key = os.getenv("GEMINI_API_KEY")
 	if not api_key:

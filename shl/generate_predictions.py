@@ -3,27 +3,29 @@ import requests
 import os
 
 LOCAL_URL = "http://127.0.0.1:8002/recommend"
-DEFAULT_XLSX = "data/Gen_AI Dataset.xlsx"
-ALT_CSV = "data/gen_ai_dataset.csv"
+TEST_FILE = "data/Gen_AI_Test-Set_FULL.csv"
 
 def load_queries():
-	"""Load first column of Gen AI dataset from XLSX (preferred) or CSV fallback."""
-	# Prefer CSV if present (explicit user-provided query list), else fallback to Excel.
-	if os.path.exists(ALT_CSV):
-		df = pd.read_csv(ALT_CSV)
-		print(f"Loaded {ALT_CSV} with {len(df)} rows")
-	elif os.path.exists(DEFAULT_XLSX):
-		df = pd.read_excel(DEFAULT_XLSX)
-		print(f"Loaded {DEFAULT_XLSX} with {len(df)} rows")
-	else:
-		raise FileNotFoundError(f"Place your dataset at '{DEFAULT_XLSX}' or '{ALT_CSV}'.")
+	"""Load test queries from Gen_AI_Test-Set_FULL.csv"""
+	if not os.path.exists(TEST_FILE):
+		raise FileNotFoundError(f"Test file not found: '{TEST_FILE}'")
+	
+	df = pd.read_csv(TEST_FILE)
+	print(f"Loaded {TEST_FILE} with {len(df)} rows")
+	
 	if df.empty:
 		raise ValueError("Dataset is empty.")
-	first_col = df.columns[0]
-	return df[first_col].astype(str).tolist()
+	
+	# Get the Query column
+	if 'Query' in df.columns:
+		return df['Query'].astype(str).tolist()
+	else:
+		# Use first column if Query not found
+		first_col = df.columns[0]
+		return df[first_col].astype(str).tolist()
 
 def call_api(q):
-	payload = {"job_title": q, "top_k": 10}
+	payload = {"job_title": q, "description": "", "top_k": 10}
 	r = requests.post(LOCAL_URL, json=payload)
 	r.raise_for_status()
 	return r.json()
